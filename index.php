@@ -241,7 +241,7 @@
       </div>
 
       <div class="email-institucional">
-        <h1>Se ainda não possui seu <span class="yellow">email institucional</span> preencha as informações abaixo:</h1>
+        <h1>Se ainda não possui seu email institucional preencha as informações abaixo:</h1>
       </div>
     </section>
   </main>
