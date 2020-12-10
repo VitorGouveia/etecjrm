@@ -1,5 +1,5 @@
 <?php
-
+/*
 if (isset($_POST['submit'])) {
     $nome = $_POST['nome'];
     $sobrenome = $_POST['sobrenome'];
@@ -14,5 +14,5 @@ if (isset($_POST['submit'])) {
 
     mail($mailto, $subject, $txt);
 } 
-
-?>
+*/
+?> 
