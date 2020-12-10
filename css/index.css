@@ -240,104 +240,31 @@ main section {
   background: var(--section-bg);
 }
 
-main section .teams-widget {
-  margin: 2% 0 2% 0;
+main section .natal-widget {
+  margin: 6% 0 2% 0;
   display: flex;
   width: 80%;
   height: 30%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(#505AC9, #464EB8);
+  background: linear-gradient(251.35deg, #E40010 0%, #B3000C 100%);;
   border-radius: 35px;
 }
 
-main section .email-institucional {
-  width: 80%;
-}
-
-main section .teams-widget .top {
+main section .natal-widget .top {
   display: flex;
   width: 100%;
   flex-direction: row;
   margin: 2% 0;
   align-items: center;
   justify-content: center;
+  
 }
-
-main section .teams-widget .yellow {
-  color: #FAFF00;
-  text-decoration: none;
-}
-
-main section .teams-widget .yellow:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-main section .teams-widget .top .teams-shadow {
-  filter: drop-shadow( 8px 5px 2px rgba(0, 0, 0, 0.5));
-  margin: 0 2%;
-}
-
-main section .teams-widget .top h1 {
+main section .natal-widget .top h1 {
+  text-align: center;
   color: #fff;
-}
-
-main section .email-institucional form {
-  background: none;
-  margin:4% auto;
-  display: flex;
-  flex-direction: column;
-}
-
-main section .email-institucional form h2 {
-  margin-bottom: 4%;
-}
-
-main section .email-institucional div.input {
-  margin-bottom: 4%;
-  position: relative;
-}
-
-main section .email-institucional input,
-main section .email-institucional button {
-  width: 100%;
-  padding: 16px 0;
-  border: none;
-  border-bottom: 1px solid var(--dark-orange);
-  color: var(--font-color);
-  background-color: transparent;
-  outline: none;
-}
-
-main section .email-institucional button {
-  font-size: 20px;
-  margin-top: 16px;
-  background: none;
-  padding: 1% 0;
-  color: var(--font-color);
-  border: 3px solid var(--dark-orange);
-  transition: .4s;
-}
-
-main section .email-institucional button:hover {
-  background: var(--dark-orange);
-  cursor: pointer;
-}
-
-main section .email-institucional input ~ label {
-  position: absolute;
-  top: 16px;
-  left: 0;
-  transition: .4s;
-}
-
-main section .email-institucional input:focus ~ label,
-main section .email-institucional input:valid ~ label {
-  transform: translateY(-24px);
-  font-size: 0.8em;
-  letter-spacing: 0.1em;
+  padding: 0 2%;
 }
 
 footer {

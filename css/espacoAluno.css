@@ -49,7 +49,7 @@ body {
   align-items: center;
   background: var(--body-color);
   background-image: url('../recursos/images/background-images/etecjrm3.jpg');
-  background-size: 93% 40%;
+  background-size: 93% 38%;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: top;
@@ -240,8 +240,81 @@ main section {
   background: var(--section-bg);
 }
 
+main section .previnir-widget {
+  margin: 6% 0 2% 0;
+  display: flex;
+  width: 80%;
+  height: 30%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(251.35deg, #128C7E, #075E54);
+  border-radius: 35px;
+}
+
+main section .previnir-widget .top {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  margin: 2% 0;
+  align-items: center;
+  justify-content: center;
+  
+}
+main section .previnir-widget .top h1 {
+  text-align: center;
+  color: #fff;
+  padding: 0 2%;
+}
+
+main section #separador {
+  width: 80%;
+  margin: 2% 0;
+  border: 1px solid var(--dark-orange);
+}
+
+main section .teams-widget {
+  margin: 2% 0 2% 0;
+  display: flex;
+  width: 80%;
+  height: 30%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#505AC9, #464EB8);
+  border-radius: 35px;
+}
+
 main section .email-institucional {
   width: 80%;
+}
+
+main section .teams-widget .top {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  margin: 2% 0;
+  align-items: center;
+  justify-content: center;
+}
+
+main section .teams-widget .yellow {
+  color: #FAFF00;
+  text-decoration: none;
+}
+
+main section .teams-widget .yellow:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+main section .teams-widget .top .teams-shadow {
+  filter: drop-shadow( 8px 5px 2px rgba(0, 0, 0, 0.5));
+  margin: 0 2%;
+}
+
+main section .teams-widget .top h1 {
+  color: #fff;
 }
 
 main section .email-institucional form {
