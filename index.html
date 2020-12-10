@@ -23,8 +23,8 @@
   <meta name="theme-color" content="#820024">
 
   <script src="./js/index.js"></script>
-  <script src="./js/themeSwitcher.js"></script>
-  <script src="https://code.responsivevoice.org/responsivevoice.js?key=pdXGWNMM"></script>
+  <script src="./js/themeSwitcher.js" defer></script>
+  <script src="https://code.responsivevoice.org/responsivevoice.js?key=pdXGWNMM" defer></script>
 </head>
 
 <body onload="toggleTheme()">
@@ -232,16 +232,36 @@
                         d="M0 0h32v32H0z" 
                         fill="none"/>
           </svg>
-          <h1>Entre no canal do <span class="yellow">Teams</span> da ETEC</h1>
-          
-        </div>
-        <div class="bottom">
-          <h3>Já possui seu <span onclick="emailInstitucional()" class="yellow">email institucional</span> ?</h3>
+          <h1>Entre no canal do <span class="yellow">Teams</span> da ETEC</h1>        
         </div>
       </div>
 
       <div class="email-institucional">
-        <h1>Se ainda não possui seu email institucional preencha as informações abaixo:</h1>
+        <form action="emailInstitucional.php" method="post">
+          <h2>Caso ainda não possua seu email institucional, consiga o seu agora</h2>
+
+          <div class="input" id="nome">
+            <input required type="text" name="nome">
+            <label>Nome</label>
+          </div>
+
+          <div class="input" id="sobrenome">
+            <input required type="text" name="sobrenome">
+            <label>Sobrenome</label>
+          </div>
+
+          <div class="input">
+            <input required type="email" name="email">
+            <label>Email</label>
+          </div>
+
+          <div class="input">
+            <input id="doc" required type="text" name="rg">
+            <label for="doc">RG</label>
+          </div>
+
+          <button type="submit">Consiga seu email institucional</button>
+        </form>
       </div>
     </section>
   </main>

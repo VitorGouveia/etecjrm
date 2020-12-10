@@ -49,7 +49,7 @@ body {
   align-items: center;
   background: var(--body-color);
   background-image: url('../recursos/images/background-images/etecjrm.jpg');
-  background-size: 93% 35%;
+  background-size: 93% 38%;
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: top;
@@ -252,6 +252,10 @@ main section .teams-widget {
   border-radius: 35px;
 }
 
+main section .email-institucional {
+  width: 80%;
+}
+
 main section .teams-widget .top {
   display: flex;
   width: 100%;
@@ -276,9 +280,64 @@ main section .teams-widget .top .teams-shadow {
   margin: 0 2%;
 }
 
-main section .teams-widget .top h1,
-main section .teams-widget .bottom h3 {
+main section .teams-widget .top h1 {
   color: #fff;
+}
+
+main section .email-institucional form {
+  background: none;
+  margin:4% auto;
+  display: flex;
+  flex-direction: column;
+}
+
+main section .email-institucional form h2 {
+  margin-bottom: 4%;
+}
+
+main section .email-institucional div.input {
+  margin-bottom: 4%;
+  position: relative;
+}
+
+main section .email-institucional input,
+main section .email-institucional button {
+  width: 100%;
+  padding: 16px 0;
+  border: none;
+  border-bottom: 1px solid var(--dark-orange);
+  color: var(--font-color);
+  background-color: transparent;
+  outline: none;
+}
+
+main section .email-institucional button {
+  font-size: 20px;
+  margin-top: 16px;
+  background: none;
+  padding: 1% 0;
+  color: var(--font-color);
+  border: 3px solid var(--dark-orange);
+  transition: .4s;
+}
+
+main section .email-institucional button:hover {
+  background: var(--dark-orange);
+  cursor: pointer;
+}
+
+main section .email-institucional input ~ label {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  transition: .4s;
+}
+
+main section .email-institucional input:focus ~ label,
+main section .email-institucional input:valid ~ label {
+  transform: translateY(-24px);
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
 }
 
 footer {
