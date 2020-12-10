@@ -1,30 +1,53 @@
-self.addEventListener("install", e => {
-    e.waitUntil(
-        caches.open("static").then(cache => {
-            return cache.addAll(
-                [
-                    "./",
-                    "./css/index.css",
-                    "./css/propsito.css",
-                    "./recursos/images/favicon/etecFavicon-128px.png",
-                    "./recursos/images/favicon/etecFavicon-144px.png",
-                    "./recursos/images/favicon/etecFavicon-152px.png",
-                    "./recursos/images/favicon/etecFavicon-192px.png",
-                    "./recursos/images/favicon/etecFavicon-384px.png",
-                    "./recursos/images/favicon/etecFavicon-512px.png",
-                    "./recursos/images/background-images/etecjrm.jpg",
-                    "./recursos/images/background-images/etecjrm2.jpg",
-                    "./recursos/svg/etec.svg"
-                ]
-            )
-        })
-    )
+const cacheName = 'etec-v1'
+const staticAssets = [
+    './',
+    './index.php',
+    './paginas/proposito.php',
+    './paginas/espacoAluno.php',
+    './css/index.css',
+    './css/proposito.css',
+    './css/espacoAluno.css',
+    './recursos/svg/etec.svg',
+    './recursos/images/background-images/etecjrm.jpg',
+    './recursos/images/background-images/etecjrm2.jpg',
+    './recursos/images/background-images/etecjrm3.jpg'
+]
+
+self.addEventListener('install', async e => {
+    const cache = await caches.open(cacheName)
+    await cache.addAll(staticAssets)
+    return self.skipWaiting()
+}) 
+
+self.addEventListener('activate', e => {
+    self.clients.claim()
 })
 
-self.addEventListener("fetch", e => {
-    e.respondWith(
-        caches.match(e.request).then(response => {
-            return response || fetch(e.request)
-        })
-    )
+self.addEventListener('fetch', async e => {
+    const req = e.request
+    const url = new URL(req.url)
+
+    if (url.origin === location.origin) {
+        e.respondWith(cacheFirst(req))
+    } else {
+        e.respondWith(networkAndCache(req))
+    }
 })
+
+async function cacheFirst(req) {
+    const cache = await caches.open(cacheName)
+    const cached = await cache.match(req)
+    return cached || fetch(req)
+}
+
+async function networkAndCache(req) {
+    const cache = await caches.open(cacheName)
+    try {
+        const fresh = await fetch(req)
+        await cache.put(req, fresh.clone())
+        return fresh
+    } catch (e) {
+        const cached = await cache.match(req)
+        return cached
+    }
+}

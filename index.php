@@ -12,18 +12,15 @@
 
   <link rel="icon" href="./recursos/svg/etec.svg">
   <link rel="stylesheet" href="./css/index.css">
-  <link rel="manifest" href="../manifest.json" />
+  <link rel="manifest" href="./manifest.webmanifest">
   <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-128px.png" />
-  <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-144px.png" />
-  <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-152px.png" />
   <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-192px.png" />
   <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-384px.png" />
   <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-512px.png" />
   <meta name="apple-mobile-web-app-status-bar" content="#f68b37">
   <meta name="theme-color" content="#820024">
 
-  <script src="./js/index.js"></script>
-  <script src="./serviceWorker.js"></script>
+  <script src="./js/index.js" defer></script>
   <script src="./js/themeSwitcher.js" defer></script>
   <script src="https://code.responsivevoice.org/responsivevoice.js?key=pdXGWNMM" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
