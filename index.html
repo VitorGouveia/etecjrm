@@ -25,6 +25,8 @@
   <script src="./js/index.js"></script>
   <script src="./js/themeSwitcher.js" defer></script>
   <script src="https://code.responsivevoice.org/responsivevoice.js?key=pdXGWNMM" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" type="text/javascript"></script>
 </head>
 
 <body onload="toggleTheme()">
@@ -256,8 +258,8 @@
           </div>
 
           <div class="input">
-            <input id="doc" required type="text" name="rg">
-            <label for="doc">RG</label>
+            <input id="rg" required type="text" name="rg">
+            <label>RG</label>
           </div>
 
           <button type="submit">Consiga seu email institucional</button>
@@ -430,6 +432,11 @@
     </div>
   </footer>
 
+  <script>
+    jQuery(document).ready(function($) {
+      $(".input #rg").mask("99.999.999-99");  
+    });
+  </script>
 </body>
 
 </html>
