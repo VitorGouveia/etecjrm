@@ -23,6 +23,7 @@
   <meta name="theme-color" content="#820024">
 
   <script src="./js/index.js"></script>
+  <script src="./serviceWorker.js"></script>
   <script src="./js/themeSwitcher.js" defer></script>
   <script src="https://code.responsivevoice.org/responsivevoice.js?key=pdXGWNMM" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
