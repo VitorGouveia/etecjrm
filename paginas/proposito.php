@@ -10,8 +10,8 @@
 
   <title>ETEC Jornalista Roberto Marinho</title>
 
-  <link rel="icon" href="./recursos/svg/etec.svg">
-  <link rel="stylesheet" href="./css/index.css">
+  <link rel="icon" href="../recursos/svg/etec.svg">
+  <link rel="stylesheet" href="../css/proposito.css">
   <link rel="manifest" href="../manifest.json" />
   <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-128px.png" />
   <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-144px.png" />
@@ -22,8 +22,8 @@
   <meta name="apple-mobile-web-app-status-bar" content="#f68b37">
   <meta name="theme-color" content="#820024">
 
-  <script src="./js/index.js"></script>
-  <script src="./js/themeSwitcher.js" defer></script>
+  <script src="../js/index.js"></script>
+  <script src="../js/themeSwitcher.js" defer></script>
   <script src="https://code.responsivevoice.org/responsivevoice.js?key=pdXGWNMM" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" type="text/javascript"></script>
@@ -34,9 +34,9 @@
     <nav>
       <div id="separador" class="primeiro"></div>
       <div class="menu">
-        <a href="./" rel="noopener" class="active">INÍCIO</a>
-        <a href="./paginas/proposito.php" rel="noopener">PROPÓSITO</a>
-        <a href="./paginas/espacoAluno.php" rel="noopener">ESPAÇO DO ALUNO</a>
+        <a href="../" rel="noopener">INÍCIO</a>
+        <a href="./proposito.php" rel="noopener" class="active">PROPÓSITO</a>
+        <a href="./espacoAluno.php" rel="noopener">ESPAÇO DO ALUNO</a>
         <a href="#" rel="noopener">CURSOS TÉCNICOS</a>
         <a href="#" rel="noopener">BLOG</a>
         <a href="#" rel="noopener">AGENDA</a>
@@ -176,95 +176,36 @@
 
   <main id="section">
     <div class="nomeSection">
-      <h1>INÍCIO</h1>
+      <h1>PROPÓSITO</h1>
     </div>
 
     <section>
-      <div class="teams-widget">
-        <div class="top">
-          <svg class="teams-shadow"
-                    viewBox="-0.12979372698077785 0 32.42343730730004 32" 
-                    xmlns="http://www.w3.org/2000/svg" 
-                    width="75" 
-                    height="75">
-                    <circle 
-                        cx="17" 
-                        cy="6" 
-                        fill="#7b83eb" 
-                        r="4.667"/>
-                    <path 
-                        d="M16.667 7H12.44l.021.093.002.008.022.086A4.671 4.671 0 0 0 18 10.559V8.333A1.337 1.337 0 0 0 16.667 7z" 
-                        opacity=".1"/>
-                    <path 
-                        d="M15.667 8h-2.884A4.667 4.667 0 0 0 17 10.667V9.333A1.337 1.337 0 0 0 15.667 8z" 
-                        opacity=".2"/>
-                    <circle 
-                        cx="27.5" 
-                        cy="7.5" 
-                        fill="#5059c9" 
-                        r="3.5"/>
-                    <path 
-                        d="M30.5 12h-7.861a.64.64 0 0 0-.64.64v8.11a5.121 5.121 0 0 0 3.967 5.084A5.006 5.006 0 0 0 32 20.938V13.5a1.5 1.5 0 0 0-1.5-1.5z" 
-                        fill="#5059c9"/>
-                    <path 
-                        d="M25 13.5V23a7.995 7.995 0 0 1-14.92 4 7.173 7.173 0 0 1-.5-1 8.367 8.367 0 0 1-.33-1A8.24 8.24 0 0 1 9 23v-9.5a1.498 1.498 0 0 1 1.5-1.5h13a1.498 1.498 0 0 1 1.5 1.5z" 
-                        fill="#7b83eb"/>
-                    <path 
-                        d="M15.667 8h-2.884A4.667 4.667 0 0 0 17 10.667V9.333A1.337 1.337 0 0 0 15.667 8z" 
-                        opacity=".2"/>
-                    <path 
-                        d="M18 12v12.67a1.32 1.32 0 0 1-1.04 1.29.966.966 0 0 1-.29.04H9.58a8.367 8.367 0 0 1-.33-1A8.24 8.24 0 0 1 9 23v-9.5a1.498 1.498 0 0 1 1.5-1.5z" 
-                        opacity=".1"/>
-                    <path 
-                        d="M17 12v13.67a.967.967 0 0 1-.04.29A1.32 1.32 0 0 1 15.67 27h-5.59a7.173 7.173 0 0 1-.5-1 8.367 8.367 0 0 1-.33-1A8.24 8.24 0 0 1 9 23v-9.5a1.498 1.498 0 0 1 1.5-1.5z" 
-                        opacity=".2"/>
-                    <path 
-                        d="M17 12v11.67A1.336 1.336 0 0 1 15.67 25H9.25A8.24 8.24 0 0 1 9 23v-9.5a1.498 1.498 0 0 1 1.5-1.5z" 
-                        opacity=".2"/>
-                    <path 
-                        d="M10.5 12A1.498 1.498 0 0 0 9 13.5V23a8.24 8.24 0 0 0 .25 2h5.42A1.336 1.336 0 0 0 16 23.67V12z" 
-                        opacity=".2"/>
-                    <path 
-                        d="M1.333 8h13.334A1.333 1.333 0 0 1 16 9.333v13.334A1.333 1.333 0 0 1 14.667 24H1.333A1.333 1.333 0 0 1 0 22.667V9.333A1.333 1.333 0 0 1 1.333 8z" 
-                        fill="#4b53bc"/>
-                    <path 
-                        d="M11.98 12.975H8.99v8.02H7.028v-8.02H4.02v-1.97h7.96z" 
-                        fill="#fff"/>
-                    <path 
-                        d="M0 0h32v32H0z" 
-                        fill="none"/>
-          </svg>
-          <h1>Entre no canal do <span class="yellow">Teams</span> da ETEC</h1>        
-        </div>
-      </div>
+        <h1>HISTÓRIA</h1>
+        <p>Desde 01 de Agosto de 2011, a cidade de São Paulo e a sua região metropolitana ganha a Escola Técnica Estadual 
+            Jornalista Roberto Marinho (Etec JRM), fruto de convênio entre o Governo do Estado de São Paulo, Fundação 
+            Roberto Marinho e TV Globo. A Etec JRM passa a integrar ao Centro Estadual de Educação Tecnológica Paula Souza
+             – maior instituição de Educação Profissional do Pais. Os cursos – Multimidia (duração de três semestres) e 
+             Produção de Áudio e Vídeo (duração de quatro semestres) - foram elaborados por especialistas do Centro Paula 
+             Souza em parceria com profissionais da Globo. Caberá ao Paula Souza o acompanhamento do processo seletivo, a 
+             contratação de professores, a compra de mobiliário e equipamentos e a infraestrutura para o funcionamento dos 
+             cursos. O prédio da nova Etec foi construído pela Globo, em terreno cedido pelo governo estadual. Coube também 
+             à empresa a implementação do projeto de paisagismo na área da escola. O Centro Paula Souza ficou responsável 
+             pelo acompanhamento do processo seletivo dos estudantes, pela contratação de professores, compra de mobiliário 
+             e equipamentos e pela infraestrutura para o funcionamento dos cursos e sua manutenção. Além das aulas teóricas 
+             realizadas em uma das 06 salas de aulas, as atividades práticas dos quatro cursos acontecem em um dos 05 laboratórios 
+             de Informática, sendo dois deles compostos com 25 Macintosh de última geração e também no estúdio de áudio e 
+             vídeo em fase de montagem nas dependências da Etec.
+        </p>
 
-      <div class="email-institucional">
-        <form action="emailInstitucional.php" method="post">
-          <h2>Caso ainda não possua seu email institucional, consiga o seu agora</h2>
+        <h1>MISSÃO</h1>
+        <p>Promover a educação profissional pública de excelência, nas área de produção cultural e design, visando ao atendimento 
+            das demandas sociais e do mundo do trabalho na área em questão.
+        </p>
 
-          <div class="input" id="nome">
-            <input required type="text" name="nome">
-            <label>Nome</label>
-          </div>
-
-          <div class="input" id="sobrenome">
-            <input required type="text" name="sobrenome">
-            <label>Sobrenome</label>
-          </div>
-
-          <div class="input">
-            <input required type="email" name="email">
-            <label>Email</label>
-          </div>
-
-          <div class="input">
-            <input id="rg" required type="text" name="rg">
-            <label>RG</label>
-          </div>
-
-          <button type="submit">Consiga seu email institucional</button>
-        </form>
-      </div>
+        <h1>VISÃO</h1>
+        <p>Consolidar-se como Unidade de Ensino de excelência e estímulo ao desenvolvimento humano e tecnológico, tendo como princípio 
+            a utilização dos meios de comunicação em sua mais alta performance e eficiência.
+        </p>
     </section>
   </main>
 
