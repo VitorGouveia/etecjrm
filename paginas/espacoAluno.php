@@ -29,7 +29,15 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" type="text/javascript"></script>
 </head>
 
-<body onload="toggleTheme()">
+<body>
+  <div class="context">
+    <ul class="context-options">
+      <li onclick="setLight()" class="context-option">Tema Claro</li>
+      <li onclick="setDark()" class="context-option">Tema Escuro</li>
+      <li onclick="setContrast()" class="context-option">Tema Contraste</li>
+    </ul>
+  </div>
+
   <header>
     <nav>
       <div id="separador" class="primeiro"></div>
