@@ -10,18 +10,20 @@
 
   <title>ETEC Jornalista Roberto Marinho</title>
 
-  <link rel="icon" href="./recursos/svg/etec.svg">
-  <link rel="stylesheet" href="./css/index.css">
-  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="../recursos/svg/etec.svg">
+  <link rel="stylesheet" href="../css/faleConosco.css">
+  <link rel="manifest" href="../manifest.webmanifest" />
   <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-128px.png" />
+  <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-144px.png" />
+  <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-152px.png" />
   <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-192px.png" />
   <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-384px.png" />
   <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-512px.png" />
   <meta name="apple-mobile-web-app-status-bar" content="#f68b37">
   <meta name="theme-color" content="#820024">
 
-  <script src="./js/index.js" defer></script>
-  <script src="./js/themeSwitcher.js" defer></script>
+  <script src="../js/index.js" defer></script>
+  <script src="../js/themeSwitcher.js" defer></script>
   <script src="https://code.responsivevoice.org/responsivevoice.js?key=pdXGWNMM" defer></script>
 </head>
 
@@ -30,12 +32,12 @@
     <nav>
       <div id="separador" class="primeiro"></div>
       <div class="menu">
-        <a href="./" rel="noopener" class="active">INÍCIO</a>
-        <a href="./paginas/proposito.php" rel="noopener">PROPÓSITO</a>
-        <a href="./paginas/espacoAluno.php" rel="noopener">ESPAÇO DO ALUNO</a>
-        <a href="./paginas/cursosTecnicos.php" rel="noopener">CURSOS TÉCNICOS</a>
+        <a href="../" rel="noopener">INÍCIO</a>
+        <a href="./proposito.php" rel="noopener">PROPÓSITO</a>
+        <a href="./espacoAluno.php" rel="noopener">ESPAÇO DO ALUNO</a>
+        <a href="./cursosTecnicos.php" rel="noopener">CURSOS TÉCNICOS</a>
         <a href="#" rel="noopener">AGENDA</a>
-        <a href="./paginas/faleConosco.php" rel="noopener">FALE CONOSCO</a>
+        <a href="./faleConosco.php" rel="noopener" class="active">FALE CONOSCO</a>
       </div>
       <div id="separador" class="segundo"></div>
     </nav>
@@ -172,7 +174,7 @@
 
   <main id="section">
     <div class="nomeSection">
-      <h1>INÍCIO</h1>
+      <h1>ESPAÇO DO ALUNO</h1>
     </div>
 
     <section>
@@ -189,43 +191,37 @@
           </svg>
           <h1>Previna-se<br>Fique em casa.<br>Use máscara.</h1>   
         </div>
-      </div>
+      </div> 
 
       <hr id="separador">
 
-      <div class="natal-widget">
-        <div class="top">
-          <svg class="gift"
-            xmlns="http://www.w3.org/2000/svg" 
-            width="50" 
-            height="50" 
-            fill="#fff"
-            viewBox="0 0 24 24">
-            <path 
-              d="M11 24h-9v-12h9v12zm0-18h-11v4h11v-4zm2 18h9v-12h-9v12zm0-18v4h11v-4h-11zm4.369-6c-2.947 0-4.671 3.477-5.369 5h5.345c3.493 0 3.53-5 .024-5zm-.796 3.621h-2.043c.739-1.121 1.439-1.966 2.342-1.966 1.172 0 1.228 1.966-.299 1.966zm-9.918 1.379h5.345c-.698-1.523-2.422-5-5.369-5-3.506 0-3.469 5 .024 5zm.473-3.345c.903 0 1.603.845 2.342 1.966h-2.043c-1.527 0-1.471-1.966-.299-1.966z"/>
-          </svg>
+      <div class="email-institucional">
+        <form action="emailInstitucional.php" method="post">
+          <h2>Em caso de dúvidas, sugestões ou reclamações, entre em contato:</h2>
 
-          <h1>A ETEC JRM te deseja <br>
-          Boas Festas!
-          </h1>     
+          <div class="input" id="nome">
+            <input required type="text" name="nome">
+            <label>Nome</label>
+          </div>
 
-          <svg 
-            version="1.0" 
-            xmlns="http://www.w3.org/2000/svg" 
-            width="50" 
-            height="50" 
-            viewBox="0 0 1000 1000" 
-            preserveAspectRatio="xMidYMid meet">
-            <g id="layer101" fill="#fff" stroke="none">
-            <path d="M477 965 c-9 -19 -19 -63 -23 -98 l-6 -64 -97 -17 c-116 -20 -114 -20 -173 -18 -41 2 -48 5 -48 22 0 25 44 125 59 134 17 11 13 26 -7 26 -38 0 -90 -49 -124 -117 -29 -59 -33 -77 -32 -141 1 -76 9 -92 47 -92 9 0 22 11 28 24 7 15 17 22 28 19 9 -2 77 -10 151 -17 l135 -12 -120 -8 c-119 -7 -244 -21 -277 -32 -24 -7 -23 -49 1 -60 17 -8 146 -163 334 -403 26 -33 47 -69 47 -81 0 -46 45 -4 55 52 7 36 9 38 45 38 36 0 38 -2 45 -37 10 -58 55 -99 55 -52 0 26 353 471 382 481 14 6 18 15 16 35 -3 27 -6 28 -83 40 -44 6 -136 15 -205 19 l-125 8 135 12 c74 7 143 15 153 18 12 3 21 -3 28 -20 7 -20 15 -25 36 -22 24 3 29 9 36 48 11 63 1 119 -34 190 -31 61 -85 110 -121 110 -20 0 -24 -15 -8 -25 16 -10 48 -77 55 -118 l7 -37 -48 -2 c-61 -2 -59 -2 -175 18 l-96 17 -6 56 c-7 63 -29 133 -43 138 -6 2 -18 -12 -27 -32z m-15 -236 c7 -50 69 -49 76 0 3 22 6 22 110 16 150 -8 212 -15 212 -24 0 -16 -60 -33 -204 -58 l-151 -25 -135 21 c-179 28 -246 48 -227 67 4 4 57 10 119 14 201 12 196 13 200 -11z m-350 -241 c8 -7 41 -51 73 -98 32 -47 72 -105 90 -130 37 -52 53 -80 38 -65 -9 9 -139 177 -207 268 -28 36 -25 49 6 25z m801 0 c-6 -7 -60 -79 -122 -160 -62 -82 -114 -148 -117 -148 -2 0 17 30 43 68 25 37 71 103 101 147 55 80 78 105 95 105 6 0 6 -5 0 -12z m-718 -30 c28 -39 165 -273 165 -281 0 -5 -45 60 -100 143 -55 82 -100 153 -100 155 0 13 21 3 35 -17z m560 -117 c-48 -72 -89 -131 -92 -131 -3 0 5 17 17 38 13 20 45 76 72 125 44 76 75 113 86 102 2 -1 -36 -62 -83 -134z m-428 102 l82 -17 21 -48 c20 -46 20 -49 4 -148 -10 -55 -21 -100 -26 -100 -4 0 -8 5 -8 12 0 6 -38 78 -85 160 -47 82 -85 151 -85 154 0 6 9 5 97 -13z m443 11 c0 -7 -156 -284 -174 -309 -12 -16 -14 -10 -25 59 -15 104 -14 149 5 189 15 31 23 35 88 49 80 18 106 21 106 12z m-240 -29 c0 -11 -24 -55 -31 -55 -4 0 -12 14 -18 30 -10 29 -9 30 20 30 16 0 29 -2 29 -5z m-11 -195 c6 -28 11 -53 11 -55 0 -7 -45 -6 -52 0 -7 8 13 105 22 105 5 0 13 -23 19 -50z"/>
-            </g>
-            <g id="layer102" fill="#fff" stroke="none">
-            <path d="M235 604 c-92 -9 -206 -25 -220 -30 -22 -9 -18 -49 4 -60 17 -8 146 -163 334 -403 26 -33 47 -69 47 -81 0 -46 45 -4 55 53 7 35 9 37 45 37 36 0 38 -2 45 -37 10 -58 55 -99 55 -52 0 26 353 471 382 481 14 6 18 15 16 35 -3 27 -7 29 -83 41 -77 12 -597 24 -680 16z m-123 -116 c8 -7 41 -51 73 -98 32 -47 72 -105 90 -130 37 -52 53 -80 38 -65 -9 9 -139 177 -207 268 -28 36 -25 49 6 25z m801 0 c-6 -7 -60 -79 -122 -160 -62 -82 -114 -148 -117 -148 -2 0 17 30 43 68 25 37 71 103 101 147 55 80 78 105 95 105 6 0 6 -5 0 -12z m-718 -30 c28 -39 165 -273 165 -281 0 -5 -45 60 -100 143 -55 82 -100 153 -100 155 0 13 21 3 35 -17z m560 -117 c-48 -72 -89 -131 -92 -131 -3 0 5 17 17 38 13 20 45 76 72 125 44 76 75 113 86 102 2 -1 -36 -62 -83 -134z m-428 102 l82 -17 21 -48 c20 -46 20 -49 4 -148 -10 -55 -21 -100 -26 -100 -4 0 -8 5 -8 12 0 6 -38 78 -85 160 -47 82 -85 151 -85 154 0 6 9 5 97 -13z m443 11 c0 -7 -156 -284 -174 -309 -12 -16 -14 -10 -25 59 -15 104 -14 149 5 189 15 31 23 35 88 49 80 18 106 21 106 12z m-240 -29 c0 -11 -24 -55 -31 -55 -4 0 -12 14 -18 30 -10 29 -9 30 20 30 16 0 29 -2 29 -5z m-11 -195 c6 -28 11 -53 11 -55 0 -7 -45 -6 -52 0 -7 8 13 105 22 105 5 0 13 -23 19 -50z"/>
-            </g>
-          </svg>
-        </div>
+          <div class="input">
+            <input required type="email" name="email">
+            <label>Email</label>
+          </div>
+
+          <div class="input">
+            <input required type="text" name="assunto">
+            <label>Assunto</label>
+          </div>
+
+          <div class="input">
+            <textarea rows="5" cols="40" id="mensagem" required type="text" name="mensagem"></textarea>
+            <label>Sua mensagem</label>
+          </div>
+
+          <button type="submit">Envie sua mensagem</button>
+        </form>
       </div>
-
     </section>
   </main>
 

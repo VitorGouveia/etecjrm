@@ -25,8 +25,6 @@
   <script src="../js/index.js" defer></script>
   <script src="../js/themeSwitcher.js" defer></script>
   <script src="https://code.responsivevoice.org/responsivevoice.js?key=pdXGWNMM" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" type="text/javascript"></script>
 </head>
 
 <body onload="toggleTheme()">
@@ -37,9 +35,9 @@
         <a href="../" rel="noopener">INÍCIO</a>
         <a href="./proposito.php" rel="noopener" class="active">PROPÓSITO</a>
         <a href="./espacoAluno.php" rel="noopener">ESPAÇO DO ALUNO</a>
-        <a href="#" rel="noopener">CURSOS TÉCNICOS</a>
-        <a href="#" rel="noopener">BLOG</a>
+        <a href="./cursosTecnicos.php" rel="noopener">CURSOS TÉCNICOS</a>
         <a href="#" rel="noopener">AGENDA</a>
+        <a href="./faleConosco.php" rel="noopener">FALE CONOSCO</a>
       </div>
       <div id="separador" class="segundo"></div>
     </nav>
@@ -389,13 +387,6 @@
       <h1>&copy;2019 ETEC JORNALISTA ROBERTO MARINHO. TODOS DIREITOS RESERVADOS</h1>
     </div>
   </footer>
-
-  <script>
-    jQuery(document).ready(function($) {
-      $(".input #rg").mask("99.999.999-99");  
-      $(".input #rg").mask("99.999.999-99",{autoclear: false});
-    });
-  </script>
 </body>
 
 </html>

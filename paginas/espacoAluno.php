@@ -37,9 +37,9 @@
         <a href="../" rel="noopener">INÍCIO</a>
         <a href="./proposito.php" rel="noopener">PROPÓSITO</a>
         <a href="./espacoAluno.php" rel="noopener" class="active">ESPAÇO DO ALUNO</a>
-        <a href="#" rel="noopener">CURSOS TÉCNICOS</a>
-        <a href="#" rel="noopener">BLOG</a>
+        <a href="./cursosTecnicos.php" rel="noopener">CURSOS TÉCNICOS</a>
         <a href="#" rel="noopener">AGENDA</a>
+        <a href="./faleConosco.php" rel="noopener">FALE CONOSCO</a>
       </div>
       <div id="separador" class="segundo"></div>
     </nav>
