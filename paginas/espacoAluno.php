@@ -32,9 +32,9 @@
 <body>
   <div class="context">
     <ul class="context-options">
-      <li onclick="setLight()" class="context-option">Tema Claro</li>
-      <li onclick="setDark()" class="context-option">Tema Escuro</li>
-      <li onclick="setContrast()" class="context-option">Tema Contraste</li>
+      <li onclick="setLight()" class="context-option light">Tema Claro</li>
+      <li onclick="setDark()" class="context-option dark">Tema Escuro</li>
+      <li onclick="setContrast()" class="context-option contrast">Tema Contraste</li>
     </ul>
   </div>
 

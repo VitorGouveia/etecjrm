@@ -4,13 +4,19 @@ const staticAssets = [
     './index.php',
     './paginas/proposito.php',
     './paginas/espacoAluno.php',
+    './paginas/cursosTecnicos.php',
+    './paginas/faleConosco.php',
     './css/index.css',
     './css/proposito.css',
     './css/espacoAluno.css',
+    './css/cursosTecnicos.css',
+    './css/faleConosco.css',
     './recursos/svg/etec.svg',
     './recursos/images/background-images/etecjrm.jpg',
     './recursos/images/background-images/etecjrm2.jpg',
-    './recursos/images/background-images/etecjrm3.jpg'
+    './recursos/images/background-images/etecjrm3.jpg',
+    './recursos/images/background-images/etecjrm4.jpg',
+    './recursos/images/background-images/etecjrm6.jpg'
 ]
 
 self.addEventListener('install', async e => {

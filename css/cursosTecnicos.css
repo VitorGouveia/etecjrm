@@ -87,6 +87,10 @@ body strong {
     cursor: pointer;
 }
 
+.context .context-options #active {
+    background: var(--orange);
+}
+
 .context .context-options .context-option:hover {
     background: var(--orange);
 }
