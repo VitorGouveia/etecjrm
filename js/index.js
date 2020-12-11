@@ -12,3 +12,27 @@ async function registerSW() {
         }
     }
 }
+
+function audioVideo() {
+    location.href = "audioVideo.php"
+}
+
+function multimidia() {
+    location.href = "multimidia.php"
+}
+
+function comunicacaoVisual() {
+    location.href = "comunicacaoVisual.php"
+}
+
+function tecnicoWeb() {
+    location.href = "tecnicoWeb.php"
+}
+
+function jogosDigitais() {
+    location.href = "jogosDigitais.php"
+}
+
+function marketing() {
+    location.href = "marketing.php"
+}

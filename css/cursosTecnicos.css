@@ -346,6 +346,24 @@ main section .cursos .row .marketing .top {
     justify-content: space-evenly;
 }
 
+main section .cursos .row .audio-video .top,
+main section .cursos .row .multimedia .top,
+main section .cursos .row .comunicacao-visual .top,
+main section .cursos .row .tecnico-web .top,
+main section .cursos .row .jogos-digitais .top,
+main section .cursos .row .marketing .top {
+    transition: .4s;
+}
+
+main section .cursos .row .audio-video:hover,
+main section .cursos .row .multimedia:hover,
+main section .cursos .row .comunicacao-visual:hover,
+main section .cursos .row .tecnico-web:hover,
+main section .cursos .row .jogos-digitais:hover,
+main section .cursos .row .marketing:hover {
+    filter: brightness(130%) saturate(140%);
+}
+
 main section .cursos .row .audio-video .top h1 a,
 main section .cursos .row .multimedia .top h1 a,
 main section .cursos .row .comunicacao-visual .top h1 a,

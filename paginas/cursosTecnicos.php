@@ -197,7 +197,7 @@
 
       <div class="cursos">
         <div class="row">
-          <div class="audio-video">
+          <div onclick="audioVideo()" class="audio-video">
             <div class="top">
               <svg class="audio"
                 xmlns="http://www.w3.org/2000/svg" 
@@ -221,7 +221,7 @@
             </div>
           </div>
 
-          <div class="multimedia">
+          <div onclick="multimidia()" class="multimedia">
             <div class="top">
               <svg class="foto"
                 xmlns="http://www.w3.org/2000/svg" 
@@ -247,7 +247,7 @@
         </div>
 
         <div class="row">
-          <div class="comunicacao-visual">
+          <div onclick="comunicacaoVisual()" class="comunicacao-visual">
             <div class="top">
               <svg class="eye"
                 xmlns="http://www.w3.org/2000/svg" 
@@ -271,7 +271,7 @@
             </div>
           </div>
 
-          <div class="tecnico-web">
+          <div onclick="tecnicoWeb()" class="tecnico-web">
             <div class="top">
               <svg class="code"
                 xmlns="http://www.w3.org/2000/svg" 
@@ -297,7 +297,7 @@
         </div>
 
         <div class="row">
-          <div class="jogos-digitais">
+          <div onclick="jogosDigitais()" class="jogos-digitais">
             <div class="top">
               <svg class="controller"
                 xmlns="http://www.w3.org/2000/svg" 
@@ -321,7 +321,7 @@
             </div>
           </div>
 
-          <div class="marketing">
+          <div onclick="marketing()" class="marketing">
             <div class="top">
               <svg 
                 xmlns="http://www.w3.org/2000/svg" 
