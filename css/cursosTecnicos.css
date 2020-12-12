@@ -447,6 +447,25 @@ main section .cursos .row .marketing .top h1 a:hover {
     text-decoration: underline;
 }
 
+@media screen and (max-width: 768px) {
+    body {
+        background-size: 93% 37%;
+    }
+
+    main section .cursos .row {
+        flex-direction: column;
+    }
+
+    main section .cursos .row .audio-video,
+    main section .cursos .row .multimedia,
+    main section .cursos .row .comunicacao-visual,
+    main section .cursos .row .tecnico-web,
+    main section .cursos .row .jogos-digitais,
+    main section .cursos .row .marketing {
+        width: 100%;
+    }
+}
+
 footer {
     width: 94%;
     display: flex;

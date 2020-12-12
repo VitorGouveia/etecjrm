@@ -369,6 +369,26 @@ main section #separador {
     border: 1px solid var(--dark-orange);
 }
 
+main section .cps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2% 0;
+}
+
+main section .cps .icones {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main section .cps .icones img {
+    pointer-events: none;
+    user-select: none;
+}
+
 footer {
     width: 94%;
     display: flex;

@@ -204,7 +204,7 @@
       <hr id="separador">
 
       <div class="email-institucional">
-        <form action="emailInstitucional.php" method="post">
+        <form action="mensagemEnviada.php#mensagem" method="post">
           <h2>Em caso de dúvidas, sugestões ou reclamações, entre em contato:</h2>
 
           <div class="input" id="nome">

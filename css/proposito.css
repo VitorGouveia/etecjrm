@@ -336,6 +336,8 @@ main section .previnir-widget .top h1 {
   text-align: center;
   color: #fff;
   padding: 0 2%;
+  pointer-events: none;
+  user-select: none;
 }
 
 main section #separador {
