@@ -389,6 +389,200 @@ main section .cps .icones img {
     user-select: none;
 }
 
+main section .calendario {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+main section .calendario .esquerda {
+    width: 30%;
+    height: 100%;
+    background: rgb(0, 83, 83);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+main section .calendario .direita {
+    width: 70%;
+    height: 100%;
+    background: white;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+main section .calendario .esquerda .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4% 0;
+}
+
+main section .calendario .esquerda .top h1 {
+    margin: 4% 0 -4% 0;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+main section .calendario .esquerda .top h3 {
+    margin: 0 0 4% 4%;
+    font-size: 24px;
+}
+
+main section .calendario .esquerda .content {
+    display: flex;
+    width: 100%;
+    margin: 4% 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main section .calendario .esquerda .content .aula, .aula2, .aula3 {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    margin: 0 0 8% 0;
+    justify-content: space-between;
+}
+
+main section .calendario .esquerda .content .aula .barra {
+    width: 3%;
+    border-radius: 10px;
+    background: lime;
+    margin: 0 4% 0 0;
+}
+
+main section .calendario .esquerda .content .aula2 .barra {
+    width: 3%;
+    border-radius: 10px;
+    background: red;
+    margin: 0 4% 0 0;
+}
+
+main section .calendario .esquerda .content .aula3 .barra {
+    width: 3%;
+    border-radius: 10px;
+    background: yellow;
+    margin: 0 4% 0 0;
+}
+
+main section .calendario .esquerda .content .aula .info,
+main section .calendario .esquerda .content .aula2 .info,
+main section .calendario .esquerda .content .aula3 .info {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+main section .calendario .esquerda .content .aula .info .row1, .row2, .row3,
+main section .calendario .esquerda .content .aula2 .info .row1, .row2, .row3,
+main section .calendario .esquerda .content .aula3 .info .row1, .row2, .row3 {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+}
+
+main section .calendario .esquerda .content .aula .info .row1,
+main section .calendario .esquerda .content .aula2 .info .row1,
+main section .calendario .esquerda .content .aula3 .info .row1 {
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+main section .calendario .esquerda .content .aula .info .row1 .close,
+main section .calendario .esquerda .content .aula2 .info .row1 .close,
+main section .calendario .esquerda .content .aula3 .info .row1 .close {
+    margin-top: 1%;
+    cursor: pointer;
+}
+
+main section .calendario .esquerda .content .aula .info .row2 h4 {
+    color: #820024;
+}
+
+main section .calendario .esquerda .content .aula2 .info .row2 h4 {
+    color: #464EB8;
+}
+
+main section .calendario .esquerda .content .aula3 .info .row2 h4 {
+    color: #464EB8;
+}
+
+main section .calendario .esquerda .content .aula .info .row2 .svgEtec,
+main section .calendario .esquerda .content .aula2 .info .row2 .svgEtec,
+main section .calendario .esquerda .content .aula3 .info .row2 .svgEtec {
+    margin-left: 6%;
+}
+
+main section .calendario .esquerda .content .aula .info .row1 h4,
+main section .calendario .esquerda .content .aula2 .info .row1 h4,
+main section .calendario .esquerda .content .aula3 .info .row1 h4 {
+    margin: 0 0 2% 0;
+}
+
+main section .calendario .esquerda .content .aula .info .row2 h4,
+main section .calendario .esquerda .content .aula2 .info .row2 h4,
+main section .calendario .esquerda .content .aula3 .info .row2 h4 {
+    margin: 2% 0;
+}
+
+main section .calendario .esquerda .content .aula .info .row3 h4,
+main section .calendario .esquerda .content .aula2 .info .row3 h4,
+main section .calendario .esquerda .content .aula3 .info .row3 h4 {
+    margin: 2% 0 0 0;
+}
+
+main section .calendario .direita .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+main section .calendario .direita .top h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0 0 1% 0;
+}
+
+main section .calendario .direita .top h2 {
+    font-size: 24px;
+    margin: 0 0 1% 0;
+}
+
+main section .calendario .direita .dias {
+}
+
+main section .calendario .direita .dias .row {
+    display: flex;
+    color: black;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+
+main section .calendario .direita .dias .row h1 {
+    margin: 2% 5.5%;
+    cursor: pointer;
+}
+
+main section .calendario .direita .dias .row h1.old {
+    color: rgba(0, 0, 0, 0.349);
+}
+
+main section .calendario .direita .dias .row h1.active {
+    color: var(--dark-orange);
+}
+
 footer {
     width: 94%;
     display: flex;

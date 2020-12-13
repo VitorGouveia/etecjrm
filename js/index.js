@@ -46,6 +46,17 @@ window.addEventListener("contextmenu", e => {
     return false;
 });
 
+function fecharLicao() {
+    document.querySelector('.calendario .content .aula').style.display = "none"
+}
+
+function fecharLicao2() {
+    document.querySelector('.calendario .content .aula2').style.display = "none"
+}
+
+function fecharLicao3() {
+    document.querySelector('.calendario .content .aula3').style.display = "none"
+}
 
 function audioVideo() {
     location.href = "audioVideo.php"
