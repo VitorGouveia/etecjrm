@@ -49,7 +49,7 @@ body {
     align-items: center;
     background: var(--body-color);
     background-image: url('../recursos/images/background-images/etecjrm.jpg');
-    background-size: 93% 38%;
+    background-size: 93% 24%;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: top;
@@ -398,19 +398,9 @@ main section .calendario {
 }
 
 main section .calendario .esquerda {
-    width: 30%;
-    height: 100%;
+    width: 100%;
     background: rgb(0, 83, 83);
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-}
-
-main section .calendario .direita {
-    width: 70%;
-    height: 100%;
-    background: white;
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-radius: 30px;
 }
 
 main section .calendario .esquerda .top {
@@ -422,20 +412,20 @@ main section .calendario .esquerda .top {
 }
 
 main section .calendario .esquerda .top h1 {
-    margin: 4% 0 -4% 0;
+    margin: 0 0 -4% 0;
     font-size: 100px;
     font-weight: bold;
 }
 
 main section .calendario .esquerda .top h3 {
-    margin: 0 0 4% 4%;
     font-size: 24px;
+    margin-left: 1%;
 }
 
 main section .calendario .esquerda .content {
     display: flex;
     width: 100%;
-    margin: 4% 0;
+    margin: 2% 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -445,29 +435,29 @@ main section .calendario .esquerda .content .aula, .aula2, .aula3 {
     display: flex;
     width: 80%;
     flex-direction: row;
-    margin: 0 0 8% 0;
+    margin: 0 0 6% 0;
     justify-content: space-between;
 }
 
 main section .calendario .esquerda .content .aula .barra {
-    width: 3%;
+    width: 1%;
     border-radius: 10px;
     background: lime;
-    margin: 0 4% 0 0;
+    margin: 0 2% 0 0;
 }
 
 main section .calendario .esquerda .content .aula2 .barra {
-    width: 3%;
+    width: 1%;
     border-radius: 10px;
     background: red;
-    margin: 0 4% 0 0;
+    margin: 0 2% 0 0;
 }
 
 main section .calendario .esquerda .content .aula3 .barra {
-    width: 3%;
+    width: 1%;
     border-radius: 10px;
     background: yellow;
-    margin: 0 4% 0 0;
+    margin: 0 2% 0 0;
 }
 
 main section .calendario .esquerda .content .aula .info,
@@ -518,70 +508,97 @@ main section .calendario .esquerda .content .aula3 .info .row2 h4 {
 main section .calendario .esquerda .content .aula .info .row2 .svgEtec,
 main section .calendario .esquerda .content .aula2 .info .row2 .svgEtec,
 main section .calendario .esquerda .content .aula3 .info .row2 .svgEtec {
-    margin-left: 6%;
+    margin-left: 2%;
 }
 
 main section .calendario .esquerda .content .aula .info .row1 h4,
 main section .calendario .esquerda .content .aula2 .info .row1 h4,
 main section .calendario .esquerda .content .aula3 .info .row1 h4 {
-    margin: 0 0 2% 0;
+    margin: 0 0 1% 0;
 }
 
 main section .calendario .esquerda .content .aula .info .row2 h4,
 main section .calendario .esquerda .content .aula2 .info .row2 h4,
 main section .calendario .esquerda .content .aula3 .info .row2 h4 {
-    margin: 2% 0;
+    margin: 1% 0;
 }
 
 main section .calendario .esquerda .content .aula .info .row3 h4,
 main section .calendario .esquerda .content .aula2 .info .row3 h4,
 main section .calendario .esquerda .content .aula3 .info .row3 h4 {
-    margin: 2% 0 0 0;
+    margin: 1% 0 0 0;
 }
 
-main section .calendario .direita .top {
+main section .calendario .esquerda .newsletter {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+main section .calendario .esquerda .newsletter form {
+    background: none;
+    margin:2% auto;
+    width: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: black;
-}
-
-main section .calendario .direita .top h1 {
-    font-size: 60px;
-    font-weight: bold;
-    margin: 0 0 1% 0;
-}
-
-main section .calendario .direita .top h2 {
-    font-size: 24px;
-    margin: 0 0 1% 0;
-}
-
-main section .calendario .direita .dias {
-}
-
-main section .calendario .direita .dias .row {
-    display: flex;
-    color: black;
-    flex-direction: row;
-    justify-content: center;
+  }
+  
+  main section .calendario .esquerda .newsletter form h2 {
+    margin-bottom: 4%;
+  }
+  
+  main section .calendario .esquerda .newsletter div.input {
+    margin-bottom: 4%;
+    position: relative;
+  }
+  
+  main section .calendario .esquerda .newsletter input,
+  main section .calendario .esquerda .newsletter button {
     width: 100%;
-    align-items: center;
-}
-
-main section .calendario .direita .dias .row h1 {
-    margin: 2% 5.5%;
+    padding: 16px 0;
+    border: none;
+    border-bottom: 1px solid var(--dark-orange);
+    color: var(--font-color);
+    background-color: transparent;
+    outline: none;
+  }
+  
+  main section .calendario .esquerda .newsletter button {
+    font-size: 20px;
+    margin-top: 16px;
+    background: none;
+    padding: 1% 0;
+    color: var(--font-color);
+    border: 3px solid var(--dark-orange);
+    transition: .4s;
+  }
+  
+  main section .calendario .esquerda .newsletter button:hover {
+    background: var(--dark-orange);
     cursor: pointer;
-}
+  }
+  
+  main section .calendario .esquerda .newsletter input ~ label,
+  main section .calendario .esquerda .newsletter textarea ~ label {
+    position: absolute;
+    top: 16px;
+    left: 0;
+    transition: .4s;
+  }
+  
+  main section .calendario .esquerda .newsletter input:focus ~ label,
+  main section .calendario .esquerda .newsletter input:valid ~ label,
+  main section .calendario .esquerda .newsletter textarea:focus ~ label,
+  main section .calendario .esquerda .newsletter textarea:valid ~ label {
+    transform: translateY(-24px);
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+  }
 
-main section .calendario .direita .dias .row h1.old {
-    color: rgba(0, 0, 0, 0.349);
-}
-
-main section .calendario .direita .dias .row h1.active {
-    color: var(--dark-orange);
-}
+  textarea {
+      resize: none;
+  }
+  
 
 footer {
     width: 94%;

@@ -485,60 +485,22 @@
                     </div>
                   </div>
               </div>
-              <div class="bottom"></div>
-          </div>
-          <div class="direita">
-              <div class="top">
-                  <h1>2020</h1>
-                  <h2>DEZEMBRO</h2>
-              </div>
-              <div class="dias">
+              <div class="newsletter">
+                <form action="" method="post">
+                  <h2>Insira seus dados abaixo para receber nossas lições personalizadas</h2>
 
-                <div class="row">
-                    <h1>06</h1>
-                    <h1>07</h1>
-                    <h1>08</h1>
-                    <h1>09</h1>
-                    <h1>10</h1>
-                    <h1>11</h1>
-                    <h1 class="active">12</h1>
-                </div>
-                <div class="row">
-                    <h1>13</h1>
-                    <h1>14</h1>
-                    <h1>15</h1>
-                    <h1>16</h1>
-                    <h1>17</h1>
-                    <h1>18</h1>
-                    <h1>19</h1>
-                </div>
-                <div class="row">
-                    <h1>20</h1>
-                    <h1>21</h1>
-                    <h1>22</h1>
-                    <h1>23</h1>
-                    <h1>24</h1>
-                    <h1>25</h1>
-                    <h1>26</h1>
-                </div>
-                <div class="row">
-                    <h1>27</h1>
-                    <h1>28</h1>
-                    <h1>29</h1>
-                    <h1>30</h1>
-                    <h1>31</h1>
-                    <h1 class="old">01</h1>
-                    <h1 class="old">02</h1>
-                </div>
-                <div class="row">
-                    <h1 class="old">03</h1>
-                    <h1 class="old">04</h1>
-                    <h1 class="old">05</h1>
-                    <h1 class="old">06</h1>
-                    <h1 class="old">07</h1>
-                    <h1 class="old">08</h1>
-                    <h1 class="old">09</h1>
-                </div>
+                  <div class="input" id="nome">
+                    <input required type="text" name="nome">
+                    <label>Nome</label>
+                  </div>
+
+                  <div class="input">
+                    <input required type="email" name="email">
+                    <label>Email</label>
+                  </div>
+
+                  <button type="submit">Quero receber notificações personalizadas</button>
+                </form>
               </div>
           </div>
       </div> 
