@@ -49,7 +49,7 @@ body {
     align-items: center;
     background: var(--body-color);
     background-image: url('../recursos/images/background-images/etecjrm.jpg');
-    background-size: 93% 24%;
+    background-size: 93% 28%;
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: top;
@@ -380,13 +380,18 @@ main section .cps {
 main section .cps .icones {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 
 main section .cps .icones img {
     pointer-events: none;
+    margin: 0 1%;
     user-select: none;
+}
+
+main section .cps .icones .cpsLogo {
+    background: blue;
 }
 
 main section .calendario {
@@ -415,15 +420,18 @@ main section .calendario .esquerda .top h1 {
     margin: 0 0 -4% 0;
     font-size: 100px;
     font-weight: bold;
+    color: white;
 }
 
 main section .calendario .esquerda .top h3 {
     font-size: 24px;
     margin-left: 1%;
+    color: white;
 }
 
 main section .calendario .esquerda .content {
     display: flex;
+    color: white;
     width: 100%;
     margin: 2% 0;
     flex-direction: column;
@@ -431,7 +439,7 @@ main section .calendario .esquerda .content {
     align-items: center;
 }
 
-main section .calendario .esquerda .content .aula, .aula2, .aula3 {
+main section .calendario .esquerda .content .aula {
     display: flex;
     width: 80%;
     flex-direction: row;
@@ -446,49 +454,27 @@ main section .calendario .esquerda .content .aula .barra {
     margin: 0 2% 0 0;
 }
 
-main section .calendario .esquerda .content .aula2 .barra {
-    width: 1%;
-    border-radius: 10px;
-    background: red;
-    margin: 0 2% 0 0;
-}
-
-main section .calendario .esquerda .content .aula3 .barra {
-    width: 1%;
-    border-radius: 10px;
-    background: yellow;
-    margin: 0 2% 0 0;
-}
-
-main section .calendario .esquerda .content .aula .info,
-main section .calendario .esquerda .content .aula2 .info,
-main section .calendario .esquerda .content .aula3 .info {
+main section .calendario .esquerda .content .aula .info {
     display: flex;
     width: 100%;
     flex-direction: column;
 }
 
-main section .calendario .esquerda .content .aula .info .row1, .row2, .row3,
-main section .calendario .esquerda .content .aula2 .info .row1, .row2, .row3,
-main section .calendario .esquerda .content .aula3 .info .row1, .row2, .row3 {
+main section .calendario .esquerda .content .aula .info .row1, .row2, .row3 {
     display: flex;
     width: 100%;
     flex-direction: row;
     align-items: center;
 }
 
-main section .calendario .esquerda .content .aula .info .row1,
-main section .calendario .esquerda .content .aula2 .info .row1,
-main section .calendario .esquerda .content .aula3 .info .row1 {
+main section .calendario .esquerda .content .aula .info .row1 {
     display: flex;
     margin: 0;
     justify-content: space-between;
     flex-direction: row;
 }
 
-main section .calendario .esquerda .content .aula .info .row1 .close,
-main section .calendario .esquerda .content .aula2 .info .row1 .close,
-main section .calendario .esquerda .content .aula3 .info .row1 .close {
+main section .calendario .esquerda .content .aula .info .row1 .close {
     margin-top: 1%;
     cursor: pointer;
 }
@@ -497,41 +483,26 @@ main section .calendario .esquerda .content .aula .info .row2 h4 {
     color: #820024;
 }
 
-main section .calendario .esquerda .content .aula2 .info .row2 h4 {
-    color: #464EB8;
-}
-
-main section .calendario .esquerda .content .aula3 .info .row2 h4 {
-    color: #464EB8;
-}
-
-main section .calendario .esquerda .content .aula .info .row2 .svgEtec,
-main section .calendario .esquerda .content .aula2 .info .row2 .svgEtec,
-main section .calendario .esquerda .content .aula3 .info .row2 .svgEtec {
+main section .calendario .esquerda .content .aula .info .row2 .svgEtec {
     margin-left: 2%;
 }
 
-main section .calendario .esquerda .content .aula .info .row1 h4,
-main section .calendario .esquerda .content .aula2 .info .row1 h4,
-main section .calendario .esquerda .content .aula3 .info .row1 h4 {
+main section .calendario .esquerda .content .aula .info .row1 h4 {
     margin: 0 0 1% 0;
 }
 
-main section .calendario .esquerda .content .aula .info .row2 h4,
-main section .calendario .esquerda .content .aula2 .info .row2 h4,
-main section .calendario .esquerda .content .aula3 .info .row2 h4 {
+main section .calendario .esquerda .content .aula .info .row2 h4 {
     margin: 1% 0;
 }
 
-main section .calendario .esquerda .content .aula .info .row3 h4,
-main section .calendario .esquerda .content .aula2 .info .row3 h4,
-main section .calendario .esquerda .content .aula3 .info .row3 h4 {
+main section .calendario .esquerda .content .aula .info .row3 h4 {
     margin: 1% 0 0 0;
 }
 
 main section .calendario .esquerda .newsletter {
     display: flex;
     align-items: center;
+    color: white;
     margin-bottom: 2%;
 }
 
@@ -558,7 +529,7 @@ main section .calendario .esquerda .newsletter form {
     padding: 16px 0;
     border: none;
     border-bottom: 1px solid var(--dark-orange);
-    color: var(--font-color);
+    color: white;
     background-color: transparent;
     outline: none;
   }
@@ -568,7 +539,7 @@ main section .calendario .esquerda .newsletter form {
     margin-top: 16px;
     background: none;
     padding: 1% 0;
-    color: var(--font-color);
+    color: white;
     border: 3px solid var(--dark-orange);
     transition: .4s;
   }

@@ -1,6 +1,4 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
   <meta name="author" content="Thiago, Rodrigo, Vinícius, Vitor">
@@ -26,15 +24,6 @@
 </head>
 
 <body>
-  <div class="context">
-    <ul class="context-options">
-      <li onclick="setLight()" class="context-option light">Tema Claro</li>
-      <li onclick="setDark()" class="context-option dark">Tema Escuro</li>
-      <li onclick="setContrast()" class="context-option contrast">Tema Contraste</li>
-    </ul>
-  </div>
-
-
   <header>
     <nav>
       <div id="separador" class="primeiro"></div>
@@ -304,190 +293,10 @@
                         </div>
                     </div>
                   </div>
-                  <div class="aula2">
-                    <div class="barra"></div>
-                    <div class="info">
-                        <div class="row1">
-                            <h4>Matemática</h4>
-                            <svg onclick="fecharLicao2()" class="close"
-                                xmlns="http://www.w3.org/2000/svg" 
-                                width="16" 
-                                height="16" 
-                                viewBox="0 0 24 24" 
-                                fill="none" 
-                                stroke="currentColor" 
-                                stroke-width="2" 
-                                stroke-linecap="round" 
-                                stroke-linejoin="round" 
-                                class="feather feather-x">
-                                <line 
-                                    x1="18" 
-                                    y1="6" 
-                                    x2="6" 
-                                    y2="18">
-                                </line>
-                                <line 
-                                    x1="6" 
-                                    y1="6" 
-                                    x2="18" 
-                                    y2="18">
-                                </line>
-                            </svg>
-                        </div>
-                        <div class="row2">
-                            <h4>TEAMS</h4>
-                            <svg class="svgEtec" 
-                                viewBox="-0.12979372698077785 0 32.42343730730004 32" 
-                                xmlns="http://www.w3.org/2000/svg" 
-                                width="16" 
-                                height="16">
-                                <circle 
-                                    cx="17" 
-                                    cy="6" 
-                                    fill="#7b83eb" 
-                                    r="4.667"/>
-                                    <path 
-                                        d="M16.667 7H12.44l.021.093.002.008.022.086A4.671 4.671 0 0 0 18 10.559V8.333A1.337 1.337 0 0 0 16.667 7z" 
-                                        opacity=".1"/>
-                                    <path 
-                                        d="M15.667 8h-2.884A4.667 4.667 0 0 0 17 10.667V9.333A1.337 1.337 0 0 0 15.667 8z" 
-                                        opacity=".2"/>
-                                    <circle 
-                                        cx="27.5" 
-                                        cy="7.5" 
-                                        fill="#5059c9" 
-                                        r="3.5"/>
-                                    <path 
-                                        d="M30.5 12h-7.861a.64.64 0 0 0-.64.64v8.11a5.121 5.121 0 0 0 3.967 5.084A5.006 5.006 0 0 0 32 20.938V13.5a1.5 1.5 0 0 0-1.5-1.5z" 
-                                        fill="#5059c9"/>
-                                    <path 
-                                        d="M25 13.5V23a7.995 7.995 0 0 1-14.92 4 7.173 7.173 0 0 1-.5-1 8.367 8.367 0 0 1-.33-1A8.24 8.24 0 0 1 9 23v-9.5a1.498 1.498 0 0 1 1.5-1.5h13a1.498 1.498 0 0 1 1.5 1.5z" 
-                                        fill="#7b83eb"/>
-                                    <path 
-                                        d="M15.667 8h-2.884A4.667 4.667 0 0 0 17 10.667V9.333A1.337 1.337 0 0 0 15.667 8z" 
-                                        opacity=".2"/>
-                                    <path 
-                                        d="M18 12v12.67a1.32 1.32 0 0 1-1.04 1.29.966.966 0 0 1-.29.04H9.58a8.367 8.367 0 0 1-.33-1A8.24 8.24 0 0 1 9 23v-9.5a1.498 1.498 0 0 1 1.5-1.5z" 
-                                        opacity=".1"/>
-                                    <path 
-                                        d="M17 12v13.67a.967.967 0 0 1-.04.29A1.32 1.32 0 0 1 15.67 27h-5.59a7.173 7.173 0 0 1-.5-1 8.367 8.367 0 0 1-.33-1A8.24 8.24 0 0 1 9 23v-9.5a1.498 1.498 0 0 1 1.5-1.5z" 
-                                        opacity=".2"/>
-                                    <path 
-                                        d="M17 12v11.67A1.336 1.336 0 0 1 15.67 25H9.25A8.24 8.24 0 0 1 9 23v-9.5a1.498 1.498 0 0 1 1.5-1.5z" 
-                                        opacity=".2"/>
-                                    <path 
-                                        d="M10.5 12A1.498 1.498 0 0 0 9 13.5V23a8.24 8.24 0 0 0 .25 2h5.42A1.336 1.336 0 0 0 16 23.67V12z" 
-                                        opacity=".2"/>
-                                    <path 
-                                        d="M1.333 8h13.334A1.333 1.333 0 0 1 16 9.333v13.334A1.333 1.333 0 0 1 14.667 24H1.333A1.333 1.333 0 0 1 0 22.667V9.333A1.333 1.333 0 0 1 1.333 8z" 
-                                        fill="#4b53bc"/>
-                                    <path 
-                                        d="M11.98 12.975H8.99v8.02H7.028v-8.02H4.02v-1.97h7.96z" 
-                                        fill="#fff"/>
-                                    <path 
-                                        d="M0 0h32v32H0z" 
-                                        fill="none"/>
-                            </svg>
-                        </div>
-                        <div class="row3">
-                            <h4>12:30 - 13:00</h4>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="aula3">
-                    <div class="barra"></div>
-                    <div class="info">
-                        <div class="row1">
-                            <h4>Arte Digital</h4>
-                            <svg onclick="fecharLicao3()" class="close"
-                                xmlns="http://www.w3.org/2000/svg" 
-                                width="16" 
-                                height="16" 
-                                viewBox="0 0 24 24" 
-                                fill="none" 
-                                stroke="currentColor" 
-                                stroke-width="2" 
-                                stroke-linecap="round" 
-                                stroke-linejoin="round" 
-                                class="feather feather-x">
-                                <line 
-                                    x1="18" 
-                                    y1="6" 
-                                    x2="6" 
-                                    y2="18">
-                                </line>
-                                <line 
-                                    x1="6" 
-                                    y1="6" 
-                                    x2="18" 
-                                    y2="18">
-                                </line>
-                            </svg>
-                        </div>
-                        <div class="row2">
-                            <h4>TEAMS</h4>
-                            <svg class="svgEtec" 
-                                viewBox="-0.12979372698077785 0 32.42343730730004 32" 
-                                xmlns="http://www.w3.org/2000/svg" 
-                                width="16" 
-                                height="16">
-                                <circle 
-                                    cx="17" 
-                                    cy="6" 
-                                    fill="#7b83eb" 
-                                    r="4.667"/>
-                                    <path 
-                                        d="M16.667 7H12.44l.021.093.002.008.022.086A4.671 4.671 0 0 0 18 10.559V8.333A1.337 1.337 0 0 0 16.667 7z" 
-                                        opacity=".1"/>
-                                    <path 
-                                        d="M15.667 8h-2.884A4.667 4.667 0 0 0 17 10.667V9.333A1.337 1.337 0 0 0 15.667 8z" 
-                                        opacity=".2"/>
-                                    <circle 
-                                        cx="27.5" 
-                                        cy="7.5" 
-                                        fill="#5059c9" 
-                                        r="3.5"/>
-                                    <path 
-                                        d="M30.5 12h-7.861a.64.64 0 0 0-.64.64v8.11a5.121 5.121 0 0 0 3.967 5.084A5.006 5.006 0 0 0 32 20.938V13.5a1.5 1.5 0 0 0-1.5-1.5z" 
-                                        fill="#5059c9"/>
-                                    <path 
-                                        d="M25 13.5V23a7.995 7.995 0 0 1-14.92 4 7.173 7.173 0 0 1-.5-1 8.367 8.367 0 0 1-.33-1A8.24 8.24 0 0 1 9 23v-9.5a1.498 1.498 0 0 1 1.5-1.5h13a1.498 1.498 0 0 1 1.5 1.5z" 
-                                        fill="#7b83eb"/>
-                                    <path 
-                                        d="M15.667 8h-2.884A4.667 4.667 0 0 0 17 10.667V9.333A1.337 1.337 0 0 0 15.667 8z" 
-                                        opacity=".2"/>
-                                    <path 
-                                        d="M18 12v12.67a1.32 1.32 0 0 1-1.04 1.29.966.966 0 0 1-.29.04H9.58a8.367 8.367 0 0 1-.33-1A8.24 8.24 0 0 1 9 23v-9.5a1.498 1.498 0 0 1 1.5-1.5z" 
-                                        opacity=".1"/>
-                                    <path 
-                                        d="M17 12v13.67a.967.967 0 0 1-.04.29A1.32 1.32 0 0 1 15.67 27h-5.59a7.173 7.173 0 0 1-.5-1 8.367 8.367 0 0 1-.33-1A8.24 8.24 0 0 1 9 23v-9.5a1.498 1.498 0 0 1 1.5-1.5z" 
-                                        opacity=".2"/>
-                                    <path 
-                                        d="M17 12v11.67A1.336 1.336 0 0 1 15.67 25H9.25A8.24 8.24 0 0 1 9 23v-9.5a1.498 1.498 0 0 1 1.5-1.5z" 
-                                        opacity=".2"/>
-                                    <path 
-                                        d="M10.5 12A1.498 1.498 0 0 0 9 13.5V23a8.24 8.24 0 0 0 .25 2h5.42A1.336 1.336 0 0 0 16 23.67V12z" 
-                                        opacity=".2"/>
-                                    <path 
-                                        d="M1.333 8h13.334A1.333 1.333 0 0 1 16 9.333v13.334A1.333 1.333 0 0 1 14.667 24H1.333A1.333 1.333 0 0 1 0 22.667V9.333A1.333 1.333 0 0 1 1.333 8z" 
-                                        fill="#4b53bc"/>
-                                    <path 
-                                        d="M11.98 12.975H8.99v8.02H7.028v-8.02H4.02v-1.97h7.96z" 
-                                        fill="#fff"/>
-                                    <path 
-                                        d="M0 0h32v32H0z" 
-                                        fill="none"/>
-                            </svg>
-                        </div>
-                        <div class="row3">
-                            <h4>13:00 - 14:00</h4>
-                        </div>
-                    </div>
-                  </div>
               </div>
               <div class="newsletter">
-                <form action="" method="post">
-                  <h2>Insira seus dados abaixo para receber nossas lições personalizadas</h2>
+                <form action="./includes/licao.php" method="POST">
+                  <h2>Insira seus dados abaixo para receber nossas lições personalizadas no seu email</h2>
 
                   <div class="input" id="nome">
                     <input required type="text" name="nome">
@@ -511,7 +320,6 @@
         <h1>Patrocinadores da ETEC JRM</h1>
         <div class="icones">
           <img src="./recursos/images/index/globo.png" alt="Globo" width="10%">
-          <img src="./recursos/images/index/cps.png" alt="Centro Paula Souza" width="10%">
           <img src="./recursos/images/index/adobe.svg" alt="Centro Paula Souza" width="10%">
         </div>
       </div>
@@ -682,6 +490,14 @@
       <h1>&copy;2019 ETEC JORNALISTA ROBERTO MARINHO. TODOS DIREITOS RESERVADOS</h1>
     </div>
   </footer>
+
+  <div class="context">
+    <ul class="context-options">
+      <li onclick="setLight()" class="context-option light">Tema Claro</li>
+      <li onclick="setDark()" class="context-option dark">Tema Escuro</li>
+      <li onclick="setContrast()" class="context-option contrast">Tema Contraste</li>
+    </ul>
+  </div>
 </body>
 
 </html>
