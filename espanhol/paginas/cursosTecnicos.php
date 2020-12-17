@@ -12,7 +12,7 @@
 
   <link rel="icon" href="../../recursos/svg/etec.svg">
   <link rel="stylesheet" href="../../css/cursosTecnicos.css">
-  <link rel="manifest" href="..//..manifest.webmanifest">
+  <link rel="manifest" href="../../manifest.webmanifest">
   <link rel="apple-touch-icon" href="../../recursos/images/favicon/etecFavicon-128px.png" />
   <link rel="apple-touch-icon" href="../../recursos/images/favicon/etecFavicon-192px.png" />
   <link rel="apple-touch-icon" href="../../recursos/images/favicon/etecFavicon-384px.png" />

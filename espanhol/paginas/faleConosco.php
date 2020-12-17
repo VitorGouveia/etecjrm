@@ -40,9 +40,9 @@
         <a href="../" rel="noopener">COMIENZO</a>
         <a href="./proposito.php" rel="noopener">PROPÓSITO</a>
         <a href="./espacoAluno.php" rel="noopener">ESPACIO ESTUDIANTIL</a>
-        <a href="./cursosTecnicos.php" rel="noopener" class="active">CURSOS TÉCNICOS</a>
+        <a href="./cursosTecnicos.php" rel="noopener">CURSOS TÉCNICOS</a>
         <a href="#" rel="noopener">CALENDARIO</a>
-        <a href="./faleConosco.php" rel="noopener">HABLE CON NOSOTROS</a>
+        <a href="./faleConosco.php" rel="noopener" class="active">HABLE CON NOSOTROS</a>
       </div>
       <div id="separador" class="segundo"></div>
     </nav>

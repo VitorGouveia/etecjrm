@@ -212,8 +212,8 @@
 		Podrás desarrollar trabajos en portales de Internet, productoras multimedia, oficinas de creación de publicidad y comunicación, editoriales de periódicos y revistas online.</p>
 
         <h1>RÉCORD PROFESIONAL</h1>
-        El alumno formado en el curso de Técnico Multimedia recibe un Registro Profesional que le habilita para trabajar en diversas áreas. <br><br>Coordinador del curso: Docente Juliana Lamas<br>
-		<br> <a href="http://etecjrm.com.br/wp-content/uploads/2020/08/Plano-de-Curso-Multimídia-NOVO.pdf">Matriz de Cursos</a></p>
+        <p>El alumno formado en el curso de Técnico Multimedia recibe un Registro Profesional que le habilita para trabajar en diversas áreas. <br><br>Coordinador del curso: Docente Juliana Lamas<br>
+		    <br> <a href="http://etecjrm.com.br/wp-content/uploads/2020/08/Plano-de-Curso-Multimídia-NOVO.pdf">Matriz de Cursos</a>
         </p>
     </section>
   </main>
