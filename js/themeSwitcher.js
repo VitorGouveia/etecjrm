@@ -27,6 +27,7 @@ function toggleTheme() {
     }
 })();
 
+
 function setLight() {
     document.querySelector('.light').id = "active"
     document.querySelector('.dark').id = ""

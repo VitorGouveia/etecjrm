@@ -50,30 +50,18 @@ function fecharLicao() {
     document.querySelector('.calendario .content .aula').style.display = "none"
 }
 
-function desinscrever() {
-    location.href = "./include/desinscrever.php"
+function dropdownTema() {
+    if (document.querySelector('.tema .dropdown').style.display == "none") {
+        document.querySelector('.tema .dropdown').style.display = "block"
+    } else {
+        document.querySelector('.tema .dropdown').style.display = "none"
+    }
 }
 
-function audioVideo() {
-    location.href = "audioVideo.php"
-}
-
-function multimidia() {
-    location.href = "multimidia.php"
-}
-
-function comunicacaoVisual() {
-    location.href = "comunicacaoVisual.php"
-}
-
-function tecnicoWeb() {
-    location.href = "tecnicoWeb.php"
-}
-
-function jogosDigitais() {
-    location.href = "jogosDigitais.php"
-}
-
-function marketing() {
-    location.href = "marketing.php"
+function dropdownIdioma() {
+    if (document.querySelector('.idioma .dropdown').style.display == "none") {
+        document.querySelector('.idioma .dropdown').style.display = "block"
+    } else {
+        document.querySelector('.idioma .dropdown').style.display = "none"
+    }
 }

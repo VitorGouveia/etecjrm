@@ -18,9 +18,9 @@
 
 .theme-contrast {
     --nav-color: #fff;
-    --body-color: #808080;
-    --orange: #ff6f01;
-    --dark-orange: #410012;
+    --body-color: #464646;
+    --orange: #ff6f00;
+    --dark-orange: #33010f;
     --menu-bg: #fff;
     --font-color: #fff;
     --section-bg: #000;
@@ -152,6 +152,155 @@ header nav .menu {
     width: 100%;
     flex-direction: row;
     justify-content: center;
+}
+
+header nav .acessibilidade {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+header nav .idioma {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+header nav .idioma .top {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin: 0 10%;
+}
+
+header nav .top .down-arrow {
+    margin: 0 1%;
+    fill: black;
+}
+
+header nav .top .down-arrow:hover {
+    cursor: pointer;
+}
+
+header nav .idioma .dropdown {
+    display: none;
+    margin: 0 7%;
+    flex-direction: column;
+}
+
+header nav .idioma .dropdown .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    margin: 2% 0;
+    background: var(--dark-orange);
+    border-radius: 5px;
+    padding: 5% 0;
+}
+
+header nav .idioma .dropdown .row:hover {
+    background: var(--orange);
+    filter: brightness(80%);
+    cursor: pointer;
+}
+
+header nav .idioma .dropdown #active {
+    background: var(--orange);
+}
+
+header nav .idioma .dropdown .row h1 {
+    font-size: 20px;
+    color: white;
+    margin: 0 1%;
+}
+
+header nav .idioma .dropdown .row h1:hover {
+    text-decoration: underline;
+}
+
+header nav .tema {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+header nav .tema .top {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start; 
+    align-items: center;
+    flex-direction: row;
+    margin: 0 10%;
+}
+
+header nav .tema .top .tema1 {
+    height: 12px;
+    width: 20px;
+    background: var(--dark-orange);
+}
+
+header nav .tema .top .down-arrow {
+    fill: black;
+    margin: 0 1%;
+}
+
+header nav .tema .dropdown {
+    display: none;
+    margin: 0 7%;
+    flex-direction: column;
+}
+
+header nav .tema .dropdown .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    margin: 2% 0;
+    background: var(--dark-orange);
+    border-radius: 5px;
+    padding: 1%;
+}
+
+header nav .tema .dropdown .row:hover {
+    background:var(--orange);
+    filter: brightness(80%);
+    cursor: pointer;
+}
+
+header nav .tema .dropdown #active {
+    background: var(--orange);
+}
+
+header nav .tema .dropdown .row h1 {
+    color: white;
+    font-size: 20px;
+    margin: 0 1%;
+}
+
+header nav .tema .dropdown .row h1:hover {
+    text-decoration: underline;
+}
+
+header nav .tema .dropdown .row .tema2 {
+    height: 12px;
+    width: 20px;
+    background: white;
+}
+
+header nav .tema .dropdown .row .tema3 {
+    height: 12px;
+    width: 20px;
+    background: rgb(43, 43, 43);
+}
+
+header nav .tema .dropdown .row .tema4 {
+    height: 12px;
+    width: 20px;
+    background: #ff6f01;
 }
 
 header nav .menu a {
