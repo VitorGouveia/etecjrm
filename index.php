@@ -225,7 +225,6 @@
         <a href="./paginas/proposito.php" rel="noopener">PROPÓSITO</a>
         <a href="./paginas/espacoAluno.php" rel="noopener">ESPAÇO DO ALUNO</a>
         <a href="./paginas/cursosTecnicos.php" rel="noopener">CURSOS TÉCNICOS</a>
-        <a href="#" rel="noopener">AGENDA</a>
         <a href="./paginas/faleConosco.php" rel="noopener">FALE CONOSCO</a>
       </div>
       <div id="separador" class="segundo"></div>

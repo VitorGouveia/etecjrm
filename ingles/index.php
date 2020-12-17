@@ -260,7 +260,6 @@
         <a href="./paginas/proposito.php" rel="noopener">PURPOSE</a>
         <a href="./paginas/espacoAluno.php" rel="noopener">STUDENT SPACE</a>
         <a href="./paginas/cursosTecnicos.php" rel="noopener">TECHNICAL COURSES</a>
-        <a href="#" rel="noopener">SCHEDULE</a>
         <a href="./paginas/faleConosco.php" rel="noopener">CONTACT US</a>
       </div>
       <div id="separador" class="segundo"></div>
