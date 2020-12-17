@@ -15,8 +15,6 @@
   <link rel="stylesheet" href="../css/cursos_background.css">
   <link rel="manifest" href="../manifest.webmanifest">
   <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-128px.png" />
-  <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-144px.png" />
-  <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-152px.png" />
   <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-192px.png" />
   <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-384px.png" />
   <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-512px.png" />

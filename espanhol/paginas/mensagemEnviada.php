@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="es-es">
 
 <head>
   <meta charset="UTF-8">
@@ -10,40 +10,38 @@
 
   <title>ETEC Jornalista Roberto Marinho</title>
 
-  <link rel="icon" href="../recursos/svg/etec.svg">
-  <link rel="stylesheet" href="../css/mensagemEnviada.css">
-  <link rel="manifest" href="../manifest.webmanifest" />
-  <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-128px.png" />
-  <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-192px.png" />
-  <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-384px.png" />
-  <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-512px.png" />
+  <link rel="icon" href="../../recursos/svg/etec.svg">
+  <link rel="stylesheet" href="../../css/mensagemEnviada.css">
+  <link rel="manifest" href="../../manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="../../recursos/images/favicon/etecFavicon-128px.png" />
+  <link rel="apple-touch-icon" href="../../recursos/images/favicon/etecFavicon-192px.png" />
+  <link rel="apple-touch-icon" href="../../recursos/images/favicon/etecFavicon-384px.png" />
+  <link rel="apple-touch-icon" href="../../recursos/images/favicon/etecFavicon-512px.png" />
   <meta name="apple-mobile-web-app-status-bar" content="#f68b37">
   <meta name="theme-color" content="#820024">
 
-  <script src="../js/index.js" defer></script>
-  <script src="../js/themeSwitcher.js" defer></script>
-  <script src="https://code.responsivevoice.org/responsivevoice.js?key=pdXGWNMM" defer></script>
+  <script src="../../js/index.js" defer></script>
+  <script src="../../js/themeSwitcher.js" defer></script>
 </head>
 
 <body>
   <div class="context">
     <ul class="context-options">
       <li onclick="setLight()" class="context-option light">Tema Claro</li>
-      <li onclick="setDark()" class="context-option dark">Tema Escuro</li>
-      <li onclick="setContrast()" class="context-option contrast">Tema Contraste</li>
+      <li onclick="setDark()" class="context-option dark">Tema Oscuro</li>
+      <li onclick="setContrast()" class="context-option contrast">Tema de Contraste</li>
     </ul>
   </div>
-
   <header>
-    <nav>
+  <nav>
       <div id="separador" class="primeiro"></div>
       <div class="menu">
-        <a href="../" rel="noopener">INÍCIO</a>
+        <a href="../" rel="noopener">COMIENZO</a>
         <a href="./proposito.php" rel="noopener">PROPÓSITO</a>
-        <a href="./espacoAluno.php" rel="noopener">ESPAÇO DO ALUNO</a>
-        <a href="./cursosTecnicos.php" rel="noopener">CURSOS TÉCNICOS</a>
-        <a href="#" rel="noopener">AGENDA</a>
-        <a href="./faleConosco.php" rel="noopener">FALE CONOSCO</a>
+        <a href="./espacoAluno.php" rel="noopener">ESPACIO ESTUDIANTIL</a>
+        <a href="./cursosTecnicos.php" rel="noopener" class="active">CURSOS TÉCNICOS</a>
+        <a href="#" rel="noopener">CALENDARIO</a>
+        <a href="./faleConosco.php" rel="noopener">HABLE CON NOSOTROS</a>
       </div>
       <div id="separador" class="segundo"></div>
     </nav>
@@ -79,7 +77,7 @@
       </svg>
 
       <h1 class="nomeEtec">ETEC JORNALISTA ROBERTO MARINHO</h1>
-      <h2 class="fraseEtec">ATRAVÉS DO CONHECIMENTO, CONQUISTA-SE O MUNDO</h2>
+      <h2 class="fraseEtec">A TRAVÉS DEL CONOCIMIENTO, EL MUNDO ES CONQUISTADO</h2>
 
       <div class="icones">
         <a href="https://www.youtube.com/user/etecjrm253" rel="noopener" target="_blank">
@@ -180,7 +178,7 @@
 
   <main id="section">
     <div class="nomeSection">
-      <h1>MENSAGEM ENVIADA</h1>
+      <h1>MENSAGE ENVIADA</h1>
     </div>
 
     <section>
@@ -195,7 +193,7 @@
                 <path 
                     d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.25 17.292l-4.5-4.364 1.857-1.858 2.643 2.506 5.643-5.784 1.857 1.857-7.5 7.643z"/>
             </svg>
-                <h1>Sua mensagem foi enviada<br>Você receberá uma resposta dentro de 72 horas</h1>   
+                <h1>Su mensaje fue enviado <br> Recibirá una respuesta en 72 horas</h1>   
             </div>
         </div> 
     </section>
@@ -217,11 +215,11 @@
           </path>
           </svg>
           
-          <h1>CONTATO</h1>
+          <h1>CONTACTO</h1>
         </header>
 
-        <p><strong>Email:</strong> <a href="mailto:e253dir@cps.sp.gov.br" rel="noopener">mandar email</a></p>
-        <p><strong>Telefone:</strong> 5103-2085</p>
+        <p><strong>Correo Electrónico:</strong> <a href="mailto:e253dir@cps.sp.gov.br" rel="noopener">enviar correo electrónico</a></p>
+        <p><strong>Teléfono:</strong> 5103-2085</p>
       </div>
 
       <div class="endereco">
@@ -238,13 +236,13 @@
           </path>
           </svg>
 
-        <h1>ENDEREÇO</h1>
+          <h1>DIRECCIÓN</h1>
         </header>
         <p>ETEC Jornalista Roberto Marinho</p>
         <p>Avenida Chucri Zaidan, 40</p>
         <p>Brooklin Novo</p>
         <p>São Paulo / SP</p>
-        <p><strong>CEP:</strong> 04583-110</p>
+        <p><strong>Código postal:</strong> 04583-110</p>
       </div>
 
       <div class="social">
@@ -260,7 +258,7 @@
           >
           </path>
           </svg>
-          <h1>REDES SOCIAIS</h1>
+          <h1>REDES SOCIALES</h1>
         </header>
 
         <div class="icones">
@@ -361,7 +359,7 @@
 
     <div class="direitosAutorais">
       <div id="separador" class="quinto"></div>
-      <h1>&copy;2020 ETEC JORNALISTA ROBERTO MARINHO. TODOS DIREITOS RESERVADOS</h1>
+      <h1>&copy;2020 ETEC JORNALISTA ROBERTO MARINHO. TODOS LOS DERECHOS RESERVADOS</h1>
     </div>
   </footer>
 </body>

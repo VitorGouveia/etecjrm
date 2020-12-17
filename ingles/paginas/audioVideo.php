@@ -260,7 +260,7 @@ independent production companies, recording studios, advertising and communicati
           </path>
           </svg>
 
-        <h1>ADRESS</h1>
+        <h1>ADDRESS</h1>
         </header>
         <p>ETEC Jornalista Roberto Marinho</p>
         <p>Chucri Zaidan Avenue, 40</p>
@@ -383,7 +383,7 @@ independent production companies, recording studios, advertising and communicati
 
     <div class="direitosAutorais">
       <div id="separador" class="quinto"></div>
-      <h1>&copy;2020 ETEC JORNALISTA ROBERTO MARINHO. ALL RIGHTS RESERVED</h1>
+      <h1>&copy;2019 ETEC JORNALISTA ROBERTO MARINHO. ALL RIGHTS RESERVED</h1>
     </div>
   </footer>
 </body>

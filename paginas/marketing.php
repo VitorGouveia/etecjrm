@@ -15,8 +15,6 @@
   <link rel="stylesheet" href="../css/cursos_background.css">
   <link rel="manifest" href="../manifest.webmanifest">
   <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-128px.png" />
-  <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-144px.png" />
-  <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-152px.png" />
   <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-192px.png" />
   <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-384px.png" />
   <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-512px.png" />
@@ -382,7 +380,7 @@
 
     <div class="direitosAutorais">
       <div id="separador" class="quinto"></div>
-      <h1>&copy;2019 ETEC JORNALISTA ROBERTO MARINHO. TODOS DIREITOS RESERVADOS</h1>
+      <h1>&copy;2020 ETEC JORNALISTA ROBERTO MARINHO. TODOS DIREITOS RESERVADOS</h1>
     </div>
   </footer>
 </body>

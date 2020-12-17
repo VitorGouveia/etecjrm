@@ -14,8 +14,6 @@
   <link rel="stylesheet" href="../css/espacoAluno.css">
   <link rel="manifest" href="../manifest.webmanifest" />
   <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-128px.png" />
-  <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-144px.png" />
-  <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-152px.png" />
   <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-192px.png" />
   <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-384px.png" />
   <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-512px.png" />
@@ -453,14 +451,14 @@
 
     <div class="direitosAutorais">
       <div id="separador" class="quinto"></div>
-      <h1>&copy;2019 ETEC JORNALISTA ROBERTO MARINHO. TODOS DIREITOS RESERVADOS</h1>
+      <h1>&copy;2020 ETEC JORNALISTA ROBERTO MARINHO. TODOS DIREITOS RESERVADOS</h1>
     </div>
   </footer>
 
   <script>
     jQuery(document).ready(function($) {
-      $(".input #rg").mask("99.999.999-99");  
-      $(".input #rg").mask("99.999.999-99",{autoclear: false});
+      $(".input #rg").mask("99.999.999-9");  
+      $(".input #rg").mask("99.999.999-9",{autoclear: false});
     });
   </script>
 </body>
