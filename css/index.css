@@ -63,6 +63,7 @@ body strong {
     text-align: center;
 }
 
+
 .context {
     width: 150px;
     z-index: 1;
@@ -71,46 +72,46 @@ body strong {
     background: var(--dark-orange);
     display: none;
     transition: 0.2s display ease-in;
-}
-
-.context .context-options {
+  }
+  
+  .context .context-options {
     list-style: none;
     padding: 10px 0;
     z-index: 1;
-}
-
-.context .context-options #active {
+  }
+  
+  .context .context-options #active {
     background: var(--orange);
-}
-
-.context .context-options .context-option {
+  }
+  
+  .context .context-options .context-option {
     font-weight: 500;
     z-index: 1;
     font-size: 14px;
     padding: 10px 40px 10px 20px;
     cursor: pointer;
-}
-
-.context .context-options .context-option:hover {
+  }
+  
+  .context .context-options .context-option:hover {
     background: var(--orange);
-}
-
-button {
+  }
+  
+  button {
     background: grey;
     border: none;
-}
-
-button .next {
+  }
+  
+  button .next {
     color: green;
-}
-
-button[disabled="false"]:hover .next {
+  }
+  
+  button[disabled="false"]:hover .next {
     color: red;
     animation: move 0.5s;
     animation-iteration-count: 2;
-}
-
-@keyframes move {
+  }
+  
+  @keyframes move {
     from {
         transform: translate(0%);
     }
@@ -120,7 +121,7 @@ button[disabled="false"]:hover .next {
     to {
         transform: transform(0%);
     }
-}
+  }
 
 header {
     margin-top: 0 !important;
@@ -566,8 +567,13 @@ main section .calendario .esquerda .newsletter form {
     letter-spacing: 0.1em;
   }
 
-  textarea {
-      resize: none;
+  main section .calendario .esquerda .newsletter form .desinscrever {
+      text-align: center;
+  } 
+
+  main section .calendario .esquerda .newsletter form .desinscrever:hover {
+      text-decoration: underline;
+      cursor: pointer;
   }
   
 

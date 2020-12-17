@@ -35,7 +35,7 @@ function setLight() {
         window.alert("Esse tema já está em uso!")
     } else {
         setTheme("theme-light")
-        contextLight.id = "active" 
+        document.querySelector('.light').id = "active" 
     }
 }
 
@@ -47,7 +47,7 @@ function setDark() {
         window.alert("Esse tema já está em uso!")
     } else {
         setTheme("theme-dark")
-        contextDark.id = "active" 
+        document.querySelector('.dark').id = "active" 
     }
 }
 
@@ -59,6 +59,6 @@ function setContrast() {
         window.alert("Esse tema já está em uso!")
     } else {
         setTheme("theme-contrast")
-        contextContrast.id = "active" 
+        document.querySelector('.contrast').id = "active" 
     }
 }

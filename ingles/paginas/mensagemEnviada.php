@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en-us">
 
 <head>
   <meta charset="UTF-8">
@@ -10,29 +10,26 @@
 
   <title>ETEC Jornalista Roberto Marinho</title>
 
-  <link rel="icon" href="../recursos/svg/etec.svg">
-  <link rel="stylesheet" href="../css/cursosTecnicos.css">
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-128px.png" />
-  <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-144px.png" />
-  <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-152px.png" />
-  <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-192px.png" />
-  <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-384px.png" />
-  <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-512px.png" />
+  <link rel="icon" href="../../recursos/svg/etec.svg">
+  <link rel="stylesheet" href="../../css/mensagemEnviada.css">
+  <link rel="manifest" href="../.../manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="../../recursos/images/favicon/etecFavicon-128px.png" />
+  <link rel="apple-touch-icon" href="../../recursos/images/favicon/etecFavicon-192px.png" />
+  <link rel="apple-touch-icon" href="../../recursos/images/favicon/etecFavicon-384px.png" />
+  <link rel="apple-touch-icon" href="../../recursos/images/favicon/etecFavicon-512px.png" />
   <meta name="apple-mobile-web-app-status-bar" content="#f68b37">
   <meta name="theme-color" content="#820024">
 
-  <script src="../js/index.js" defer></script>
-  <script src="../js/themeSwitcher.js" defer></script>
-  <script src="https://code.responsivevoice.org/responsivevoice.js?key=pdXGWNMM" defer></script>
+  <script src="../../js/index.js" defer></script>
+  <script src="../../js/themeSwitcher.js" defer></script>
 </head>
 
 <body>
-<div class="context">
+  <div class="context">
     <ul class="context-options">
-      <li onclick="setLight()" class="context-option light">Tema Claro</li>
-      <li onclick="setDark()" class="context-option dark">Tema Escuro</li>
-      <li onclick="setContrast()" class="context-option contrast">Tema Contraste</li>
+      <li onclick="setLight()" class="context-option light">Light Theme</li>
+      <li onclick="setDark()" class="context-option dark">Dark Theme</li>
+      <li onclick="setContrast()" class="context-option contrast">Contrast Theme</li>
     </ul>
   </div>
 
@@ -40,12 +37,12 @@
     <nav>
       <div id="separador" class="primeiro"></div>
       <div class="menu">
-        <a href="../" rel="noopener">INÍCIO</a>
-        <a href="./proposito.php" rel="noopener">PROPÓSITO</a>
-        <a href="./espacoAluno.php" rel="noopener">ESPAÇO DO ALUNO</a>
-        <a href="./cursosTecnicos.php" rel="noopener" class="active">CURSOS TÉCNICOS</a>
-        <a href="#" rel="noopener">AGENDA</a>
-        <a href="./faleConosco.php" rel="noopener">FALE CONOSCO</a>
+        <a href="../" rel="noopener">HOME</a>
+        <a href="./proposito.php" rel="noopener">PURPOSE</a>
+        <a href="./espacoAluno.php" rel="noopener">STUDENT SPACE</a>
+        <a href="./cursosTecnicos.php" rel="noopener">TECHNICAL COURSES</a>
+        <a href="#" rel="noopener">SCHEDULE</a>
+        <a href="./faleConosco.php" rel="noopener">CONTACT US</a>
       </div>
       <div id="separador" class="segundo"></div>
     </nav>
@@ -81,7 +78,7 @@
       </svg>
 
       <h1 class="nomeEtec">ETEC JORNALISTA ROBERTO MARINHO</h1>
-      <h2 class="fraseEtec">ATRAVÉS DO CONHECIMENTO, CONQUISTA-SE O MUNDO</h2>
+      <h2 class="fraseEtec">THROUGH KNOWLEDGE, THE WORLD IS CONQUERED</h2>
 
       <div class="icones">
         <a href="https://www.youtube.com/user/etecjrm253" rel="noopener" target="_blank">
@@ -182,178 +179,24 @@
 
   <main id="section">
     <div class="nomeSection">
-      <h1>ESPAÇO DO ALUNO</h1>
+      <h1>MESSAGE SENT</h1>
     </div>
 
     <section>
-      <div class="previnir-widget">
-        <div class="top">
-          <svg class="virus-escudo"
-            xmlns="http://www.w3.org/2000/svg" 
-            width="75" 
-            height="75" 
-            fill="#fff"
-            viewBox="0 0 24 24">
-            <path 
-              d="M10.382 15.188c-.347.26-.769.401-1.202.401-.803 0-1.207-.981-.641-1.547.307-.307.702-.505 1.133-.566.811-.117 1.167-1.122.57-1.718-.596-.597-1.601-.24-1.718.571-.062.429-.261.827-.566 1.133-.569.568-1.548.164-1.548-.642 0-.435.141-.854.4-1.202.493-.656.032-1.618-.81-1.618s-1.303.961-.811 1.618c.259.347.4.769.4 1.202 0 .805-.979 1.21-1.548.641-.308-.307-.505-.702-.566-1.133-.117-.811-1.122-1.167-1.718-.571-.597.596-.24 1.601.57 1.718.428.062.826.26 1.133.566.569.569.165 1.547-.641 1.547-.435 0-.854-.14-1.202-.401-.655-.49-1.617-.029-1.617.813 0 .841.962 1.303 1.618.812.347-.26.769-.401 1.202-.401.805 0 1.21.978.641 1.547-.307.307-.702.505-1.133.566-.811.117-1.167 1.122-.57 1.718.596.597 1.601.24 1.718-.571.062-.429.261-.827.566-1.133.569-.568 1.548-.164 1.548.642 0 .435-.141.854-.4 1.202-.492.655-.034 1.618.81 1.618.839 0 1.306-.96.811-1.62-.26-.344-.4-.764-.4-1.195 0-.807.979-1.216 1.548-.647.308.308.505.703.566 1.134.117.811 1.122 1.167 1.718.571.596-.595.242-1.603-.572-1.718-.426-.061-.822-.258-1.127-.562-.572-.571-.169-1.551.637-1.551.435 0 .854.14 1.202.401.654.489 1.617.031 1.617-.813 0-.843-.963-1.303-1.618-.812zm-5.364 2.148c-.273 0-.495-.221-.495-.495 0-.273.222-.495.495-.495s.495.222.495.495c0 .274-.222.495-.495.495zm.63-1.571c-.429 0-.775-.348-.775-.776 0-.429.347-.777.775-.777s.777.348.777.777c.001.428-.348.776-.777.776zm1.464 1.484c-.363 0-.657-.294-.657-.657s.294-.658.657-.658.657.295.657.658-.293.657-.657.657zm16.888-14.249v11.535c0 4.603-3.203 5.804-9 9.465-1.318-.833-2.496-1.535-3.539-2.183.575-.481.894-1.055 1.021-1.726.731.456 1.564.962 2.519 1.551 5.313-3.281 7-4.065 7-7.107v-9.575c-2.446-.124-4.5-.611-7-2.416-2.5 1.805-4.554 2.292-7 2.416v3.806c-.541-.484-1.244-.766-2.001-.766v-5c3.516 0 5.629-.134 9-3 3.371 2.866 5.484 3 9 3zm-4 11.535c0 1.606-.415 1.935-5 4.76v-14.353c1.827 1.105 3.474 1.6 5 1.833v7.76z"/>
-          </svg>
-          <h1>Previna-se<br>Fique em casa.<br>Use máscara.</h1>   
-        </div>
-      </div>
-
-      <hr id="separador">
-
-      <div class="cursos">
-        <div class="row">
-          <div onclick="audioVideo()" class="audio-video">
+        <div id="mensagem" class="mensagem-enviada">
             <div class="top">
-              <svg class="audio"
+            <svg 
                 xmlns="http://www.w3.org/2000/svg" 
                 width="50" 
                 height="50" 
                 fill="#fff"
                 viewBox="0 0 24 24">
                 <path 
-                  d="M5 17h-5v-10h5v10zm2-10v10l9 5v-20l-9 5zm17 4h-5v2h5v-2zm-1.584-6.232l-4.332 2.5 1 1.732 4.332-2.5-1-1.732zm1 12.732l-4.332-2.5-1 1.732 4.332 2.5 1-1.732z"/>
-              </svg>
-              <svg class="video"
-                xmlns="http://www.w3.org/2000/svg" 
-                width="50" 
-                height="50"
-                fill="#fff" 
-                viewBox="0 0 24 24">
-                <path 
-                  d="M0 1v22h24v-22h-24zm4 20h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm14 16h-12v-8h12v8zm0-10h-12v-8h12v8zm4 10h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2z"/>
-              </svg>
-              <h1><a href="audioVideo.php">Áudio e Vídeo</a></h1>        
+                    d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.25 17.292l-4.5-4.364 1.857-1.858 2.643 2.506 5.643-5.784 1.857 1.857-7.5 7.643z"/>
+            </svg>
+                <h1>Your message was sent <br> You will receive a reply within 72 hours</h1>   
             </div>
-          </div>
-
-          <div onclick="multimidia()" class="multimedia">
-            <div class="top">
-              <svg class="foto"
-                xmlns="http://www.w3.org/2000/svg" 
-                width="50" 
-                height="50"
-                fill="#fff" 
-                viewBox="0 0 24 24">
-                <path 
-                  d="M17.676 15.54c-1.433-.331-2.767-.621-2.121-1.841 1.966-3.713.521-5.699-1.555-5.699-2.117 0-3.527 2.062-1.555 5.699.665 1.227-.719 1.517-2.121 1.841-1.432.331-1.322 1.087-1.322 2.46h9.996c0-1.373.11-2.129-1.322-2.46zm-12.676-11.521v19.981h18v-19.981h-18zm16 15.981h-14.046v-14h14.046v14zm-1-20v2h-17v19h-2v-21h19z"/>
-              </svg>
-              <svg class="video"
-                xmlns="http://www.w3.org/2000/svg" 
-                width="50" 
-                height="50"
-                fill="#fff" 
-                viewBox="0 0 24 24">
-                <path 
-                  d="M0 1v22h24v-22h-24zm4 20h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm14 16h-12v-8h12v8zm0-10h-12v-8h12v8zm4 10h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2zm0-4h-2v-2h2v2z"/>
-              </svg>
-              <h1><a href="multimidia.php">Multimidia</a></h1>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div onclick="comunicacaoVisual()" class="comunicacao-visual">
-            <div class="top">
-              <svg class="eye"
-                xmlns="http://www.w3.org/2000/svg" 
-                width="50" 
-                height="50" 
-                fill="#fff"
-                viewBox="0 0 24 24">
-                <path 
-                  d="M12.015 7c4.751 0 8.063 3.012 9.504 4.636-1.401 1.837-4.713 5.364-9.504 5.364-4.42 0-7.93-3.536-9.478-5.407 1.493-1.647 4.817-4.593 9.478-4.593zm0-2c-7.569 0-12.015 6.551-12.015 6.551s4.835 7.449 12.015 7.449c7.733 0 11.985-7.449 11.985-7.449s-4.291-6.551-11.985-6.551zm-.015 3c-2.209 0-4 1.792-4 4 0 2.209 1.791 4 4 4s4-1.791 4-4c0-2.208-1.791-4-4-4z"/>
-              </svg>
-              <svg class="language"
-                xmlns="http://www.w3.org/2000/svg" 
-                width="50" 
-                height="50" 
-                fill="#fff"
-                viewBox="0 0 24 24">
-                <path 
-                  d="M21 21h-1.713l-.658-1.846h-3l-.663 1.846h-1.659l3.04-8h1.603l3.05 8zm-2.814-3.12l-1.049-3.018-1.054 3.018h2.103zm-9.464-12.037l.125-.562-1.02-.199-.101.464c-.345-.05-.712-.057-1.083-.019.009-.249.023-.494.045-.728h1.141v-.966h-1.004c.049-.246.092-.394.134-.533l-.997-.3c-.072.245-.134.484-.195.833h-1.138v.966h1.014c-.027.312-.043.637-.048.964-1.119.411-1.595 1.195-1.595 1.905 0 .84.663 1.578 1.709 1.482 1.301-.118 2.169-1.1 2.679-2.308.525.303.746.814.548 1.286-.185.436-.725.852-1.757.831v1.041c1.146.018 2.272-.417 2.715-1.469.431-1.028-.062-2.151-1.172-2.688zm-1.342.71c-.162.36-.375.717-.648.998-.041-.3-.07-.628-.086-.978.249-.032.499-.038.734-.02zm-1.758.336c.028.44.078.844.148 1.205-.927.169-.963-.744-.148-1.205zm15.378 5.111c.552 0 1 .449 1 1v8c0 .551-.448 1-1 1h-8c-.552 0-1-.449-1-1v-8c0-.551.448-1 1-1h8zm0-2h-8c-1.656 0-3 1.343-3 3v8c0 1.657 1.344 3 3 3h8c1.657 0 3-1.343 3-3v-8c0-1.657-1.343-3-3-3zm-13 3c0-.342.035-.677.102-1h-5.102c-.552 0-1-.449-1-1v-8c0-.551.448-1 1-1h8c.552 0 1 .449 1 1v5.101c.323-.066.657-.101 1-.101h1v-5c0-1.657-1.343-3-3-3h-8c-1.656 0-3 1.343-3 3v8c0 1.657 1.344 3 3 3h5v-1z"/>
-              </svg>
-              <h1><a href="comunicacaoVisual.php">Comunicação Visual</a></h1>        
-            </div>
-          </div>
-
-          <div onclick="tecnicoWeb()" class="tecnico-web">
-            <div class="top">
-              <svg class="code"
-                xmlns="http://www.w3.org/2000/svg" 
-                width="50" 
-                height="50" 
-                fill="#fff"
-                viewBox="0 0 24 24">
-                <path 
-                  d="M24 10.935v2.131l-8 3.947v-2.23l5.64-2.783-5.64-2.79v-2.223l8 3.948zm-16 3.848l-5.64-2.783 5.64-2.79v-2.223l-8 3.948v2.131l8 3.947v-2.23zm7.047-10.783h-2.078l-4.011 16h2.073l4.016-16z"/>
-              </svg>
-              <svg class="computer"
-                xmlns="http://www.w3.org/2000/svg" 
-                width="50" 
-                height="50" 
-                fill="#fff"
-                viewBox="0 0 24 24">
-                <path 
-                  d="M8.793 8.951c1.062-.757 2.542-.239 2.912 1-.655-.502-1.528-.482-2.2-.002-.677.482-.976 1.303-.716 2.082-1.05-.755-1.055-2.325.004-3.08zm3.164 10.8c.841.283 3.443 1.003 6.458 3.249l5.585-3.984c-1.448-2.031-1.05-3.452-2.489-5.471-.726-1.017-1.222-1.294-1.845-1.294-.22 0-.456.035-.724.084l.507.71c.306.428-.34.889-.646.46l-.452-.634c-.149-.21-.357-.281-.596-.281-.345 0-.753.148-1.141.237l.615.862c.304.428-.34.889-.646.46l-.533-.747c-.148-.208-.353-.28-.586-.28-.359 0-.787.17-1.186.271l.65.912c.306.429-.343.887-.646.46l-2.638-3.693c-.817-1.148-2.612.07-1.765 1.259l3.895 5.461c-.418-.154-1.152-.295-1.632-.295-1.481.003-2.051 1.628-.185 2.254zm-2.715-2.751h-6.242v-14h18v7.516c1.359.555 2.391 2.046 3 3.372v-10.888c0-1.104-.896-2-2-2h-20c-1.104 0-2 .896-2 2v14c0 1.104.896 2 2 2h6.825c-.111-.69.002-1.358.417-2z"/>
-              </svg>
-              <h1><a href="tecnicoWeb.php">Informática para Web</a></h1>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div onclick="jogosDigitais()" class="jogos-digitais">
-            <div class="top">
-              <svg class="controller"
-                xmlns="http://www.w3.org/2000/svg" 
-                width="50" 
-                height="50"
-                fill="#fff" 
-                viewBox="0 0 24 24">
-                <path 
-                  d="M6 2l1.171.203c-.355 2.245.791 2.519 2.699 2.874 1.468.273 3.13.622 3.13 3.284v.639h-1.183v-.639c0-1.556-.48-1.809-2.164-2.122-2.583-.48-4.096-1.391-3.653-4.239zm18 14c0 3.312-2.607 6-5.825 6-1.511 0-2.886-.595-3.921-1.565-1.311-1.229-3.278-1.132-4.55.038-1.03.948-2.389 1.527-3.879 1.527-3.217 0-5.825-2.688-5.825-6s2.608-6 5.825-6l12.563.007c3.118.116 5.612 2.755 5.612 5.993zm-15-1h-2v-2h-2v2h-2v2h2v2h2v-2h2v-2zm4 1h-2v1h2v-1zm4-2c0 .552.447 1 1 1s1-.448 1-1-.447-1-1-1-1 .448-1 1zm0 2c0-.552-.447-1-1-1s-1 .448-1 1 .447 1 1 1 1-.448 1-1zm2 2c0-.552-.447-1-1-1s-1 .448-1 1 .447 1 1 1 1-.448 1-1zm2-2c0-.552-.447-1-1-1s-1 .448-1 1 .447 1 1 1 1-.448 1-1z"/>
-              </svg>
-              <svg class="command"
-                xmlns="http://www.w3.org/2000/svg" 
-                width="50" 
-                height="50" 
-                fill="#fff"
-                viewBox="0 0 24 24">
-                <path 
-                  d="M22 6v16h-20v-16h20zm2-6h-24v24h24v-24zm-12.879 14l-4.707-4.707-1.414 1.414 3.293 3.293-3.293 3.293 1.414 1.414 4.707-4.707zm7.879 3h-7v2h7v-2z"/>
-              </svg>
-              <h1><a href="jogosDigitais.php">Jogos Digitais</a></h1>        
-            </div>
-          </div>
-
-          <div onclick="marketing()" class="marketing">
-            <div class="top">
-              <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                width="50" 
-                height="50" 
-                fill="#fff"
-                viewBox="0 0 24 24">
-                <path 
-                  d="M4.574 16.989c-1.768.647-3.719-.275-4.365-2.06-.647-1.785.262-3.757 2.027-4.404l3.242-1.187 2.338 6.464-3.242 1.187zm6.282 3.172c-.437-.151-.814-.43-1.089-.8l-1.635-2.202-3.301 1.209 2.602 3.353c.292.376.79.52 1.237.356l2.216-.81c.229-.084.382-.307.381-.553-.002-.246-.156-.464-.389-.545l-.022-.008zm-4.09-11.294l2.338 6.464c2.155-.417 5.077-.401 8.896.401l-4.675-12.927c-2.476 3.165-4.663 5.004-6.559 6.062zm10.795-3.102c.856.411 1.556 1.149 1.893 2.117.339.967.254 1.98-.157 2.836l1.407.678c.585-1.216.708-2.656.227-4.03-.481-1.375-1.474-2.424-2.689-3.009l-.681 1.408zm1.188-2.465c1.486.715 2.698 1.998 3.286 3.678s.438 3.441-.277 4.927l1.443.696c.893-1.857 1.079-4.055.346-6.153-.735-2.097-2.247-3.698-4.102-4.591l-.696 1.443z"/>
-              </svg>
-              <svg 
-                xmlns="http://www.w3.org/2000/svg" 
-                width="50" 
-                height="50" 
-                fill="#fff"
-                viewBox="0 0 24 24">
-                <path 
-                  d="M17.997 18h-11.995l-.002-.623c0-1.259.1-1.986 1.588-2.33 1.684-.389 3.344-.736 2.545-2.209-2.366-4.363-.674-6.838 1.866-6.838 2.491 0 4.226 2.383 1.866 6.839-.775 1.464.826 1.812 2.545 2.209 1.49.344 1.589 1.072 1.589 2.333l-.002.619zm4.811-2.214c-1.29-.298-2.49-.559-1.909-1.657 1.769-3.342.469-5.129-1.4-5.129-1.265 0-2.248.817-2.248 2.324 0 3.903 2.268 1.77 2.246 6.676h4.501l.002-.463c0-.946-.074-1.493-1.192-1.751zm-22.806 2.214h4.501c-.021-4.906 2.246-2.772 2.246-6.676 0-1.507-.983-2.324-2.248-2.324-1.869 0-3.169 1.787-1.399 5.129.581 1.099-.619 1.359-1.909 1.657-1.119.258-1.193.805-1.193 1.751l.002.463z"/>
-              </svg>
-              <h1><a href="marketing.php">Marketing</a></h1>
-            </div>
-          </div>
-        </div>
-      </div>
+        </div> 
     </section>
   </main>
 
@@ -376,8 +219,8 @@
           <h1>CONTATO</h1>
         </header>
 
-        <p><strong>Email:</strong> <a href="mailto:e253dir@cps.sp.gov.br" rel="noopener">mandar email</a></p>
-        <p><strong>Telefone:</strong> 5103-2085</p>
+        <p><strong>Email:</strong> <a href="mailto:e253dir@cps.sp.gov.br" rel="noopener">send email</a></p>
+        <p><strong>Phone Number:</strong> 5103-2085</p>
       </div>
 
       <div class="endereco">
@@ -394,13 +237,13 @@
           </path>
           </svg>
 
-        <h1>ENDEREÇO</h1>
+        <h1>ADRESS</h1>
         </header>
         <p>ETEC Jornalista Roberto Marinho</p>
-        <p>Avenida Chucri Zaidan, 40</p>
+        <p>Chucri Zaidan Avenue, 40</p>
         <p>Brooklin Novo</p>
         <p>São Paulo / SP</p>
-        <p><strong>CEP:</strong> 04583-110</p>
+        <p><strong>Postal Code:</strong> 04583-110</p>
       </div>
 
       <div class="social">
@@ -416,7 +259,7 @@
           >
           </path>
           </svg>
-          <h1>REDES SOCIAIS</h1>
+          <h1>SOCIAL MEDIA</h1>
         </header>
 
         <div class="icones">
@@ -517,7 +360,7 @@
 
     <div class="direitosAutorais">
       <div id="separador" class="quinto"></div>
-      <h1>&copy;2019 ETEC JORNALISTA ROBERTO MARINHO. TODOS DIREITOS RESERVADOS</h1>
+      <h1>&copy;2019 ETEC JORNALISTA ROBERTO MARINHO. ALL RIGHTS RESERVED</h1>
     </div>
   </footer>
 </body>

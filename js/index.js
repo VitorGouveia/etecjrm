@@ -50,12 +50,8 @@ function fecharLicao() {
     document.querySelector('.calendario .content .aula').style.display = "none"
 }
 
-function fecharLicao2() {
-    document.querySelector('.calendario .content .aula2').style.display = "none"
-}
-
-function fecharLicao3() {
-    document.querySelector('.calendario .content .aula3').style.display = "none"
+function desinscrever() {
+    location.href = "./include/desinscrever.php"
 }
 
 function audioVideo() {

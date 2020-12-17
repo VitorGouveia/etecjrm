@@ -1,4 +1,4 @@
-<html lang="pt-BR">
+<html lang="en-us">
 <head>
   <meta charset="UTF-8">
   <meta name="author" content="Thiago, Rodrigo, Vinícius, Vitor">
@@ -8,9 +8,9 @@
 
   <title>ETEC Jornalista Roberto Marinho</title>
 
-  <link rel="icon" href="./recursos/svg/etec.svg">
-  <link rel="stylesheet" href="./css/index.css">
-  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="../recursos/svg/etec.svg">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="manifest" href="../manifest.webmanifest">
   <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-128px.png" />
   <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-192px.png" />
   <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-384px.png" />
@@ -18,30 +18,28 @@
   <meta name="apple-mobile-web-app-status-bar" content="#f68b37">
   <meta name="theme-color" content="#820024">
 
-  <script src="./js/index.js" defer></script>
-  <script src="./js/themeSwitcher.js" ></script>
-  <script src="https://code.responsivevoice.org/responsivevoice.js?key=pdXGWNMM" defer></script>
+  <script src="../js/index.js" defer></script>
+  <script src="../js/themeSwitcher.js" defer ></script>
 </head>
 
 <body>
-<div class="context">
+  <div class="context">
     <ul class="context-options">
-      <li onclick="setLight()" class="context-option light">Tema Claro</li>
-      <li onclick="setDark()" class="context-option dark">Tema Escuro</li>
-      <li onclick="setContrast()" class="context-option contrast">Tema Contraste</li>
+      <li onclick="setLight()" class="context-option light">Light Theme</li>
+      <li onclick="setDark()" class="context-option dark">Dark Theme</li>
+      <li onclick="setContrast()" class="context-option contrast">Contrast Theme</li>
     </ul>
   </div>
-
   <header>
     <nav>
       <div id="separador" class="primeiro"></div>
       <div class="menu">
-        <a href="./" rel="noopener" class="active">INÍCIO</a>
-        <a href="./paginas/proposito.php" rel="noopener">PROPÓSITO</a>
-        <a href="./paginas/espacoAluno.php" rel="noopener">ESPAÇO DO ALUNO</a>
-        <a href="./paginas/cursosTecnicos.php" rel="noopener">CURSOS TÉCNICOS</a>
-        <a href="#" rel="noopener">AGENDA</a>
-        <a href="./paginas/faleConosco.php" rel="noopener">FALE CONOSCO</a>
+        <a href="./" rel="noopener" class="active">HOME</a>
+        <a href="./paginas/proposito.php" rel="noopener">PURPOSE</a>
+        <a href="./paginas/espacoAluno.php" rel="noopener">STUDENT SPACE</a>
+        <a href="./paginas/cursosTecnicos.php" rel="noopener">TECHNICAL COURSES</a>
+        <a href="#" rel="noopener">SCHEDULE</a>
+        <a href="./paginas/faleConosco.php" rel="noopener">CONTACT US</a>
       </div>
       <div id="separador" class="segundo"></div>
     </nav>
@@ -77,7 +75,8 @@
       </svg>
 
       <h1 class="nomeEtec">ETEC JORNALISTA ROBERTO MARINHO</h1>
-      <h2 class="fraseEtec">ATRAVÉS DO CONHECIMENTO, CONQUISTA-SE O MUNDO</h2>
+      <h2 class="fraseEtec">THROUGH KNOWLEDGE, THE WORLD IS CONQUERED</h2>
+
 
       <div class="icones">
         <a href="https://www.youtube.com/user/etecjrm253" rel="noopener" target="_blank">
@@ -178,7 +177,7 @@
 
   <main id="section">
     <div class="nomeSection">
-      <h1>INÍCIO</h1>
+      <h1>HOME</h1>
     </div>
 
     <section>
@@ -193,7 +192,7 @@
             <path 
               d="M10.382 15.188c-.347.26-.769.401-1.202.401-.803 0-1.207-.981-.641-1.547.307-.307.702-.505 1.133-.566.811-.117 1.167-1.122.57-1.718-.596-.597-1.601-.24-1.718.571-.062.429-.261.827-.566 1.133-.569.568-1.548.164-1.548-.642 0-.435.141-.854.4-1.202.493-.656.032-1.618-.81-1.618s-1.303.961-.811 1.618c.259.347.4.769.4 1.202 0 .805-.979 1.21-1.548.641-.308-.307-.505-.702-.566-1.133-.117-.811-1.122-1.167-1.718-.571-.597.596-.24 1.601.57 1.718.428.062.826.26 1.133.566.569.569.165 1.547-.641 1.547-.435 0-.854-.14-1.202-.401-.655-.49-1.617-.029-1.617.813 0 .841.962 1.303 1.618.812.347-.26.769-.401 1.202-.401.805 0 1.21.978.641 1.547-.307.307-.702.505-1.133.566-.811.117-1.167 1.122-.57 1.718.596.597 1.601.24 1.718-.571.062-.429.261-.827.566-1.133.569-.568 1.548-.164 1.548.642 0 .435-.141.854-.4 1.202-.492.655-.034 1.618.81 1.618.839 0 1.306-.96.811-1.62-.26-.344-.4-.764-.4-1.195 0-.807.979-1.216 1.548-.647.308.308.505.703.566 1.134.117.811 1.122 1.167 1.718.571.596-.595.242-1.603-.572-1.718-.426-.061-.822-.258-1.127-.562-.572-.571-.169-1.551.637-1.551.435 0 .854.14 1.202.401.654.489 1.617.031 1.617-.813 0-.843-.963-1.303-1.618-.812zm-5.364 2.148c-.273 0-.495-.221-.495-.495 0-.273.222-.495.495-.495s.495.222.495.495c0 .274-.222.495-.495.495zm.63-1.571c-.429 0-.775-.348-.775-.776 0-.429.347-.777.775-.777s.777.348.777.777c.001.428-.348.776-.777.776zm1.464 1.484c-.363 0-.657-.294-.657-.657s.294-.658.657-.658.657.295.657.658-.293.657-.657.657zm16.888-14.249v11.535c0 4.603-3.203 5.804-9 9.465-1.318-.833-2.496-1.535-3.539-2.183.575-.481.894-1.055 1.021-1.726.731.456 1.564.962 2.519 1.551 5.313-3.281 7-4.065 7-7.107v-9.575c-2.446-.124-4.5-.611-7-2.416-2.5 1.805-4.554 2.292-7 2.416v3.806c-.541-.484-1.244-.766-2.001-.766v-5c3.516 0 5.629-.134 9-3 3.371 2.866 5.484 3 9 3zm-4 11.535c0 1.606-.415 1.935-5 4.76v-14.353c1.827 1.105 3.474 1.6 5 1.833v7.76z"/>
           </svg>
-          <h1>Previna-se<br>Fique em casa.<br>Use máscara.</h1>   
+          <h1>Protect yourself<br>Stay home.<br>Use mask.</h1>   
         </div>
       </div>
 
@@ -211,8 +210,8 @@
               d="M11 24h-9v-12h9v12zm0-18h-11v4h11v-4zm2 18h9v-12h-9v12zm0-18v4h11v-4h-11zm4.369-6c-2.947 0-4.671 3.477-5.369 5h5.345c3.493 0 3.53-5 .024-5zm-.796 3.621h-2.043c.739-1.121 1.439-1.966 2.342-1.966 1.172 0 1.228 1.966-.299 1.966zm-9.918 1.379h5.345c-.698-1.523-2.422-5-5.369-5-3.506 0-3.469 5 .024 5zm.473-3.345c.903 0 1.603.845 2.342 1.966h-2.043c-1.527 0-1.471-1.966-.299-1.966z"/>
           </svg>
 
-          <h1>A ETEC JRM te deseja <br>
-          Boas Festas!
+          <h1>ETEC JRM wishes you <br>
+          Happy Holidays!
           </h1>     
 
           <svg 
@@ -236,14 +235,14 @@
           <div class="esquerda">
               <div class="top">
                   <h1>12</h1>
-                  <h3>SÁBADO</h3>
+                  <h3>SATURDAY</h3>
               </div>
               <div class="content">
                   <div class="aula">
                     <div class="barra"></div>
                     <div class="info">
                         <div class="row1">
-                            <h4>Física</h4>
+                            <h4>Physics</h4>
                             <svg onclick="fecharLicao()" class="close"
                                 xmlns="http://www.w3.org/2000/svg" 
                                 width="16" 
@@ -303,12 +302,12 @@
                   </div>
               </div>
               <div class="newsletter">
-                <form action="./includes/licao.php#mensagem-enviada" method="POST">
-                  <h2>Insira seus dados abaixo para receber nossas lições personalizadas no seu email</h2>
+                <form action="./includes/licao.php" method="POST">
+                  <h2>Enter your details below to receive our personalized lessons in your email</h2>
 
                   <div class="input" id="nome">
                     <input required type="text" name="nome">
-                    <label>Nome</label>
+                    <label>Name</label>
                   </div>
 
                   <div class="input">
@@ -316,8 +315,7 @@
                     <label>Email</label>
                   </div>
 
-                  <button type="submit">Quero receber notificações personalizadas</button>
-                  <h2 onclick="desinscrever()" class="desinscrever">Quero me desinscrever</h2>
+                  <button type="submit">I want to receive personalized notifications</button>
                 </form>
               </div>
           </div>
@@ -326,10 +324,10 @@
       <hr id="separador">
 
       <div class="cps">
-        <h1>Patrocinadores da ETEC JRM</h1>
+        <h1>ETEC JRM Sponsors</h1>
         <div class="icones">
-          <img src="./recursos/images/index/globo.png" alt="Globo" width="10%">
-          <img src="./recursos/images/index/adobe.svg" alt="Centro Paula Souza" width="10%">
+          <img src="../recursos/images/index/globo.png" alt="Globo" width="10%">
+          <img src="../recursos/images/index/adobe.svg" alt="Centro Paula Souza" width="10%">
         </div>
       </div>
 
@@ -352,11 +350,11 @@
           </path>
           </svg>
           
-          <h1>CONTATO</h1>
+          <h1>CONTACT</h1>
         </header>
 
-        <p><strong>Email:</strong> <a href="mailto:e253dir@cps.sp.gov.br" rel="noopener">mandar email</a></p>
-        <p><strong>Telefone:</strong> 5103-2085</p>
+        <p><strong>Email:</strong> <a href="mailto:e253dir@cps.sp.gov.br" rel="noopener">send email</a></p>
+        <p><strong>Phone Number:</strong> 5103-2085</p>
       </div>
 
       <div class="endereco">
@@ -373,13 +371,13 @@
           </path>
           </svg>
 
-        <h1>ENDEREÇO</h1>
+        <h1>ADRESS</h1>
         </header>
         <p>ETEC Jornalista Roberto Marinho</p>
-        <p>Avenida Chucri Zaidan, 40</p>
+        <p>Chucri Zaidan Avenue, 40</p>
         <p>Brooklin Novo</p>
         <p>São Paulo / SP</p>
-        <p><strong>CEP:</strong> 04583-110</p>
+        <p><strong>Postal Code:</strong> 04583-110</p>
       </div>
 
       <div class="social">
@@ -395,7 +393,7 @@
           >
           </path>
           </svg>
-          <h1>REDES SOCIAIS</h1>
+          <h1>SOCIAL MEDIA</h1>
         </header>
 
         <div class="icones">
@@ -496,7 +494,7 @@
 
     <div class="direitosAutorais">
       <div id="separador" class="quinto"></div>
-      <h1>&copy;2019 ETEC JORNALISTA ROBERTO MARINHO. TODOS DIREITOS RESERVADOS</h1>
+      <h1>&copy;2019 ETEC JORNALISTA ROBERTO MARINHO. ALL RIGHTS RESERVED</h1>
     </div>
   </footer>
 </body>
