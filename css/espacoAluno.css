@@ -586,6 +586,47 @@ main section .email-institucional input:valid ~ label {
   letter-spacing: 0.1em;
 }
 
+main section .boletim-widget {
+  margin: 2% 0 2% 0;
+  display: flex;
+  width: 80%;
+  height: 30%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #925c0b, #8a4004);
+  border-radius: 35px;
+}
+
+main section .boletim-widget:hover {
+  filter: brightness(120%) saturate(110%);
+  cursor: pointer;
+}
+
+main section .boletim-widget .top {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  margin: 2% 0;
+  align-items: center;
+  justify-content: center;
+}
+
+main section .boletim-widget .top h1 {
+  color: white;
+  text-decoration: none;
+}
+
+main section .boletim-widget .top h1:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+main section .boletim-widget .top .paper {
+  filter: drop-shadow( 8px 5px 2px rgba(0, 0, 0, 0.5));
+  margin: 0 2%;
+}
+
 footer {
   width: 94%;
   display: flex;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -10,27 +10,28 @@
 
   <title>ETEC Jornalista Roberto Marinho</title>
 
-  <link rel="icon" href="../../recursos/svg/etec.svg">
-  <link rel="stylesheet" href="../../css/proposito.css">
-  <link rel="stylesheet" href="../../css/cursos_background.css">
-  <link rel="manifest" href="../../manifest.webmanifest">
-  <link rel="apple-touch-icon" href="../../recursos/images/favicon/etecFavicon-128px.png" />
-  <link rel="apple-touch-icon" href="../../recursos/images/favicon/etecFavicon-192px.png" />
-  <link rel="apple-touch-icon" href="../../recursos/images/favicon/etecFavicon-384px.png" />
-  <link rel="apple-touch-icon" href="../../recursos/images/favicon/etecFavicon-512px.png" />
+  <link rel="icon" href="../recursos/svg/etec.svg">
+  <link rel="stylesheet" href="../css/cursosTecnicos.css">
+  <link rel="stylesheet" href="../css/boletim.css">
+  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-128px.png" />
+  <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-192px.png" />
+  <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-384px.png" />
+  <link rel="apple-touch-icon" href="../recursos/images/favicon/etecFavicon-512px.png" />
   <meta name="apple-mobile-web-app-status-bar" content="#f68b37">
   <meta name="theme-color" content="#820024">
 
-  <script src="../../js/index.js" defer></script>
-  <script src="../../js/themeSwitcher.js" defer></script>
+  <script src="../js/index.js" defer></script>
+  <script src="../js/themeSwitcher.js" defer></script>
+  <script src="https://code.responsivevoice.org/responsivevoice.js?key=pdXGWNMM" defer></script>
 </head>
 
 <body>
-  <div class="context">
+<div class="context">
     <ul class="context-options">
-      <li onclick="setLight()" class="context-option light">Light Theme</li>
-      <li onclick="setDark()" class="context-option dark">Dark Theme</li>
-      <li onclick="setContrast()" class="context-option contrast">Contrast Theme</li>
+      <li onclick="setLight()" class="context-option light">Tema Claro</li>
+      <li onclick="setDark()" class="context-option dark">Tema Escuro</li>
+      <li onclick="setContrast()" class="context-option contrast">Tema Contraste</li>
     </ul>
   </div>
 
@@ -68,60 +69,23 @@
 
         <div class="idioma">
           <div onclick="dropdownIdioma()" class="top"> 
-            <svg id="" class="eua"
+            <svg id="active" class="br" 
               xmlns="http://www.w3.org/2000/svg" 
               height="20" 
-              viewBox="0 -94 512 512" 
-              width=20>
+              viewBox="1 -79 511.999 511" 
+              width="20">
               <path 
-                d="m512 269.613281v14.984375c0 21.503906-17.4375 38.945313-38.953125 38.945313h-434.105469c-21.511718 0-38.941406-17.441407-38.941406-38.945313v-14.984375zm0 0" fill="#e8e7e6"/><path d="m512 161.769531v53.929688h-512v-53.929688zm0 0" 
-                fill="#e8e7e6"/>
+                d="m397.242188 353.601562h97.101562c9.75 0 17.65625-7.902343 17.65625-17.652343v-317.792969c0-9.753906-7.90625-17.65625-17.65625-17.65625h-476.6875c-9.753906 0-17.65625 7.90625-17.65625 17.65625v317.792969c0 9.75 7.902344 17.652343 17.65625 17.652343zm0 0" 
+                fill="#4c8056"/>
               <path 
-                d="m0 53.925781h512v53.917969h-512zm0 0" 
-                fill="#e8e7e6"/>
+                d="m79.449219 168.222656 176.550781 114.761719 176.550781-114.761719-176.550781-114.757812zm0 0" 
+                fill="#f3d55b"/>
               <path 
-                d="m0 215.699219h512v53.914062h-512zm0 0" 
-                fill="#ff4440"/>
+                d="m317.792969 168.222656c.066406 12.941406-4.019531 25.566406-11.652344 36.019532-4.054687 5.761718-9.109375 10.753906-14.917969 14.742187-10.324218 7.21875-22.625 11.070313-35.222656 11.03125-16.390625.011719-32.117188-6.492187-43.707031-18.085937-11.59375-11.589844-18.097657-27.3125-18.085938-43.707032-.015625-.472656.015625-.945312.085938-1.414062.070312-7.074219 1.445312-14.078125 4.0625-20.65625 10.625-27.832032 39.609375-44.109375 68.90625-38.695313 29.296875 5.414063 50.550781 30.972657 50.53125 60.765625zm0 0" 
+                fill="#3b97d3"/>
               <path 
-                d="m512 107.84375v53.925781h-512v-53.925781zm0 0" 
-                fill="#ff4440"/>
-              <path 
-                d="m512 38.941406v14.984375h-512v-14.984375c0-21.511718 17.429688-38.941406 38.941406-38.941406h434.105469c21.515625 0 38.953125 17.429688 38.953125 38.941406zm0 0" 
-                fill="#ff4440"/>
-              <path 
-                d="m237.726562 36.382812v85.003907c0 22.304687-18.082031 40.382812-40.386718 40.382812h-197.339844v-122.828125c0-21.507812 17.433594-38.941406 38.941406-38.941406h162.398438c20.09375 0 36.386718 16.289062 36.386718 36.382812zm0 0" 
-                fill="#5eaad1"/>
-              <g 
-                fill="#e8e7e6">
-                <path 
-                  d="m44.417969 47.96875c-3.144531 0-6.03125-1.9375-7.238281-4.835938-1.308594-3.136718-.367188-6.898437 2.261718-9.050781 2.699219-2.207031 6.628906-2.347656 9.484375-.347656 2.675781 1.875 3.917969 5.34375 3.035157 8.492187-.9375 3.351563-4.050782 5.742188-7.542969 5.742188zm0 0"/>
-                <path 
-                  d="m118.859375 47.96875c-7.183594 0-10.539063-9.355469-4.964844-13.890625 5.378907-4.375 13.574219.136719 12.746094 7.019531-.46875 3.882813-3.886719 6.871094-7.78125 6.871094zm0 0"/>
-                <path 
-                  d="m193.308594 47.96875c-7.121094 0-10.503906-9.179688-5.089844-13.792969 5.394531-4.59375 13.902344.109375 12.835938 7.113281-.574219 3.792969-3.902344 6.679688-7.746094 6.679688zm0 0"/>
-                <path 
-                  d="m81.640625 47.96875c-3.488281 0-6.613281-2.386719-7.546875-5.742188-.882812-3.160156.375-6.648437 3.070312-8.515624 5.746094-3.976563 13.660157 1.300781 12.113282 8.148437-.796875 3.53125-4.011719 6.109375-7.636719 6.109375zm0 0"/>
-                <path 
-                  d="m156.089844 47.96875c-3.148438 0-6.03125-1.9375-7.242188-4.835938-1.308594-3.144531-.363281-6.894531 2.265625-9.050781 2.640625-2.167969 6.476563-2.339843 9.324219-.457031 2.71875 1.796875 4.050781 5.261719 3.246094 8.417969-.878906 3.441406-4.035156 5.925781-7.59375 5.925781zm0 0"/>
-                <path 
-                  d="m63.027344 88.722656c-3.203125 0-6.15625-2.027344-7.308594-5.015625-1.191406-3.101562-.257812-6.773437 2.335938-8.875 5.566406-4.507812 14.105468.492188 12.652343 7.589844-.734375 3.613281-3.972656 6.300781-7.679687 6.300781zm0 0"/>
-                <path 
-                  d="m137.46875 88.722656c-3.214844 0-6.136719-2.035156-7.300781-5.015625-1.230469-3.15625-.21875-6.882812 2.453125-8.972656 5.585937-4.371094 13.972656.664063 12.539062 7.6875-.742187 3.617187-3.988281 6.300781-7.691406 6.300781zm0 0"/>
-                <path 
-                  d="m100.25 88.722656c-3.277344 0-6.265625-2.117187-7.371094-5.195312-1.117187-3.117188-.097656-6.753906 2.523438-8.792969 2.703125-2.109375 6.503906-2.222656 9.324218-.273437 2.695313 1.867187 3.960938 5.355468 3.078126 8.515624-.941407 3.351563-4.074219 5.746094-7.554688 5.746094zm0 0"/>
-                <path 
-                  d="m174.699219 88.722656c-7.128907 0-10.488281-9.15625-5.09375-13.796875 5.511719-4.738281 14.226562.375 12.773437 7.496094-.738281 3.613281-3.976562 6.300781-7.679687 6.300781zm0 0"/>
-                <path 
-                  d="m44.417969 129.472656c-7.347657 0-10.589844-9.636718-4.730469-14.085937 5.578125-4.234375 13.734375.804687 12.429688 7.699219-.691407 3.652343-3.96875 6.386718-7.699219 6.386718zm0 0"/>
-                <path 
-                  d="m118.859375 129.472656c-7.136719 0-10.496094-9.160156-5.085937-13.792968 2.667968-2.285157 6.6875-2.488282 9.570312-.472657 2.738281 1.914063 3.980469 5.460938 3.023438 8.664063-.980469 3.28125-4.078126 5.601562-7.507813 5.601562zm0 0"/>
-                <path 
-                  d="m193.308594 129.472656c-7.058594 0-10.472656-9.003906-5.203125-13.691406 2.625-2.335938 6.621093-2.617188 9.550781-.664062 2.625 1.746093 3.972656 5.039062 3.320312 8.128906-.761718 3.578125-4 6.226562-7.667968 6.226562zm0 0"/>
-                <path 
-                  d="m81.640625 129.472656c-7.132813 0-10.515625-9.191406-5.0625-13.816406 5.371094-4.554688 13.851563.105469 12.8125 7.109375-.5625 3.796875-3.898437 6.707031-7.75 6.707031zm0 0"/>
-                <path 
-                  d="m156.089844 129.472656c-6.882813 0-10.4375-8.683594-5.4375-13.480468 2.519531-2.421876 6.453125-2.871094 9.457031-1.082032 2.824219 1.683594 4.328125 5.117188 3.648437 8.335938-.761718 3.574218-4 6.226562-7.667968 6.226562zm0 0"/>
-              </g>
+                d="m306.140625 204.242188c-4.054687 5.761718-9.109375 10.753906-14.917969 14.742187l-.882812-4.945313c-3.539063-19.945312-16.011719-37.175781-33.859375-46.761718-17.847657-9.585938-39.101563-10.472656-57.683594-2.40625l-4.5 1.941406c.066406-7.078125 1.441406-14.078125 4.058594-20.65625 8.605469-2.964844 17.648437-4.457031 26.75-4.414062 38.113281-.121094 71.46875 25.601562 81.035156 62.5zm0 0" 
+                fill="#ecf0f1"/>
             </svg>
             <svg class="down-arrow"
               xmlns="http://www.w3.org/2000/svg" 
@@ -134,7 +98,28 @@
             </svg>
           </div>
           <div class="dropdown">
-            <div id="active" onclick="alert('This language is already in use!');" class="row">    
+            <div id="active" onclick="alert('Esse idioma já esta em uso!');" class="row">    
+              <svg class="br" 
+                xmlns="http://www.w3.org/2000/svg" 
+                height="20" 
+                viewBox="1 -79 511.999 511" 
+                width="20">
+                <path 
+                  d="m397.242188 353.601562h97.101562c9.75 0 17.65625-7.902343 17.65625-17.652343v-317.792969c0-9.753906-7.90625-17.65625-17.65625-17.65625h-476.6875c-9.753906 0-17.65625 7.90625-17.65625 17.65625v317.792969c0 9.75 7.902344 17.652343 17.65625 17.652343zm0 0" 
+                  fill="#4c8056"/>
+                <path 
+                  d="m79.449219 168.222656 176.550781 114.761719 176.550781-114.761719-176.550781-114.757812zm0 0" 
+                  fill="#f3d55b"/>
+                <path 
+                  d="m317.792969 168.222656c.066406 12.941406-4.019531 25.566406-11.652344 36.019532-4.054687 5.761718-9.109375 10.753906-14.917969 14.742187-10.324218 7.21875-22.625 11.070313-35.222656 11.03125-16.390625.011719-32.117188-6.492187-43.707031-18.085937-11.59375-11.589844-18.097657-27.3125-18.085938-43.707032-.015625-.472656.015625-.945312.085938-1.414062.070312-7.074219 1.445312-14.078125 4.0625-20.65625 10.625-27.832032 39.609375-44.109375 68.90625-38.695313 29.296875 5.414063 50.550781 30.972657 50.53125 60.765625zm0 0" 
+                  fill="#3b97d3"/>
+                <path 
+                  d="m306.140625 204.242188c-4.054687 5.761718-9.109375 10.753906-14.917969 14.742187l-.882812-4.945313c-3.539063-19.945312-16.011719-37.175781-33.859375-46.761718-17.847657-9.585938-39.101563-10.472656-57.683594-2.40625l-4.5 1.941406c.066406-7.078125 1.441406-14.078125 4.058594-20.65625 8.605469-2.964844 17.648437-4.457031 26.75-4.414062 38.113281-.121094 71.46875 25.601562 81.035156 62.5zm0 0" 
+                  fill="#ecf0f1"/>
+              </svg>
+              <h1>Português</h1>
+            </div>
+            <div onclick="location.href = './ingles/paginas/cursosTecnicos.php'" class="row">
               <svg id="" class="eua"
                 xmlns="http://www.w3.org/2000/svg" 
                 height="20" 
@@ -192,28 +177,7 @@
               </svg>
               <h1>English</h1>
             </div>
-            <div onclick="location.href = '../../'" class="row">
-              <svg class="br" 
-                xmlns="http://www.w3.org/2000/svg" 
-                height="20" 
-                viewBox="1 -79 511.999 511" 
-                width="20">
-                <path 
-                  d="m397.242188 353.601562h97.101562c9.75 0 17.65625-7.902343 17.65625-17.652343v-317.792969c0-9.753906-7.90625-17.65625-17.65625-17.65625h-476.6875c-9.753906 0-17.65625 7.90625-17.65625 17.65625v317.792969c0 9.75 7.902344 17.652343 17.65625 17.652343zm0 0" 
-                  fill="#4c8056"/>
-                <path 
-                  d="m79.449219 168.222656 176.550781 114.761719 176.550781-114.761719-176.550781-114.757812zm0 0" 
-                  fill="#f3d55b"/>
-                <path 
-                  d="m317.792969 168.222656c.066406 12.941406-4.019531 25.566406-11.652344 36.019532-4.054687 5.761718-9.109375 10.753906-14.917969 14.742187-10.324218 7.21875-22.625 11.070313-35.222656 11.03125-16.390625.011719-32.117188-6.492187-43.707031-18.085937-11.59375-11.589844-18.097657-27.3125-18.085938-43.707032-.015625-.472656.015625-.945312.085938-1.414062.070312-7.074219 1.445312-14.078125 4.0625-20.65625 10.625-27.832032 39.609375-44.109375 68.90625-38.695313 29.296875 5.414063 50.550781 30.972657 50.53125 60.765625zm0 0" 
-                  fill="#3b97d3"/>
-                <path 
-                  d="m306.140625 204.242188c-4.054687 5.761718-9.109375 10.753906-14.917969 14.742187l-.882812-4.945313c-3.539063-19.945312-16.011719-37.175781-33.859375-46.761718-17.847657-9.585938-39.101563-10.472656-57.683594-2.40625l-4.5 1.941406c.066406-7.078125 1.441406-14.078125 4.058594-20.65625 8.605469-2.964844 17.648437-4.457031 26.75-4.414062 38.113281-.121094 71.46875 25.601562 81.035156 62.5zm0 0" 
-                  fill="#ecf0f1"/>
-              </svg>
-              <h1>Português</h1>
-            </div>
-            <div onclick="location.href = '../../espanhol/'" class="row">
+            <div onclick="location.href = './espanhol/paginas/cursosTecnicos.php'" class="row">
               <svg id="" class="esp" 
                 xmlns="http://www.w3.org/2000/svg" 
                 height="20" 
@@ -260,12 +224,12 @@
       </div>
       <div id="separador" class="primeiro"></div>
       <div class="menu">
-        <a href="../" rel="noopener">HOME</a>
-        <a href="./proposito.php" rel="noopener">PURPOSE</a>
-        <a href="./espacoAluno.php" rel="noopener">STUDENT SPACE</a>
-        <a href="./cursosTecnicos.php" rel="noopener" class="active">TECHNICAL COURSES</a>
-        <a href="#" rel="noopener">SCHEDULE</a>
-        <a href="./faleConosco.php" rel="noopener">CONTACT US</a>
+        <a href="../" rel="noopener">INÍCIO</a>
+        <a href="./proposito.php" rel="noopener">PROPÓSITO</a>
+        <a href="./espacoAluno.php" rel="noopener"  class="active">ESPAÇO DO ALUNO</a>
+        <a href="./cursosTecnicos.php" rel="noopener">CURSOS TÉCNICOS</a>
+        <a href="#" rel="noopener">AGENDA</a>
+        <a href="./faleConosco.php" rel="noopener">FALE CONOSCO</a>
       </div>
       <div id="separador" class="segundo"></div>
     </nav>
@@ -301,7 +265,7 @@
       </svg>
 
       <h1 class="nomeEtec">ETEC JORNALISTA ROBERTO MARINHO</h1>
-      <h2 class="fraseEtec">THROUGH KNOWLEDGE, THE WORLD IS CONQUERED</h2>
+      <h2 class="fraseEtec">ATRAVÉS DO CONHECIMENTO, CONQUISTA-SE O MUNDO</h2>
 
       <div class="icones">
         <a href="https://www.youtube.com/user/etecjrm253" rel="noopener" target="_blank">
@@ -402,7 +366,7 @@
 
   <main id="section">
     <div class="nomeSection">
-      <h1>VISUAL COMMUNICATION</h1>
+      <h1>BOLETINS</h1>
     </div>
 
     <section>
@@ -417,25 +381,78 @@
             <path 
               d="M10.382 15.188c-.347.26-.769.401-1.202.401-.803 0-1.207-.981-.641-1.547.307-.307.702-.505 1.133-.566.811-.117 1.167-1.122.57-1.718-.596-.597-1.601-.24-1.718.571-.062.429-.261.827-.566 1.133-.569.568-1.548.164-1.548-.642 0-.435.141-.854.4-1.202.493-.656.032-1.618-.81-1.618s-1.303.961-.811 1.618c.259.347.4.769.4 1.202 0 .805-.979 1.21-1.548.641-.308-.307-.505-.702-.566-1.133-.117-.811-1.122-1.167-1.718-.571-.597.596-.24 1.601.57 1.718.428.062.826.26 1.133.566.569.569.165 1.547-.641 1.547-.435 0-.854-.14-1.202-.401-.655-.49-1.617-.029-1.617.813 0 .841.962 1.303 1.618.812.347-.26.769-.401 1.202-.401.805 0 1.21.978.641 1.547-.307.307-.702.505-1.133.566-.811.117-1.167 1.122-.57 1.718.596.597 1.601.24 1.718-.571.062-.429.261-.827.566-1.133.569-.568 1.548-.164 1.548.642 0 .435-.141.854-.4 1.202-.492.655-.034 1.618.81 1.618.839 0 1.306-.96.811-1.62-.26-.344-.4-.764-.4-1.195 0-.807.979-1.216 1.548-.647.308.308.505.703.566 1.134.117.811 1.122 1.167 1.718.571.596-.595.242-1.603-.572-1.718-.426-.061-.822-.258-1.127-.562-.572-.571-.169-1.551.637-1.551.435 0 .854.14 1.202.401.654.489 1.617.031 1.617-.813 0-.843-.963-1.303-1.618-.812zm-5.364 2.148c-.273 0-.495-.221-.495-.495 0-.273.222-.495.495-.495s.495.222.495.495c0 .274-.222.495-.495.495zm.63-1.571c-.429 0-.775-.348-.775-.776 0-.429.347-.777.775-.777s.777.348.777.777c.001.428-.348.776-.777.776zm1.464 1.484c-.363 0-.657-.294-.657-.657s.294-.658.657-.658.657.295.657.658-.293.657-.657.657zm16.888-14.249v11.535c0 4.603-3.203 5.804-9 9.465-1.318-.833-2.496-1.535-3.539-2.183.575-.481.894-1.055 1.021-1.726.731.456 1.564.962 2.519 1.551 5.313-3.281 7-4.065 7-7.107v-9.575c-2.446-.124-4.5-.611-7-2.416-2.5 1.805-4.554 2.292-7 2.416v3.806c-.541-.484-1.244-.766-2.001-.766v-5c3.516 0 5.629-.134 9-3 3.371 2.866 5.484 3 9 3zm-4 11.535c0 1.606-.415 1.935-5 4.76v-14.353c1.827 1.105 3.474 1.6 5 1.833v7.76z"/>
           </svg>
-          <h1>Protect yourself<br>Stay home.<br>Use mask.</h1>   
+          <h1>Previna-se<br>Fique em casa.<br>Use máscara.</h1>   
         </div>
       </div>
 
       <hr id="separador">
 
-        <h1>HIGH SCHOOL WITH VISUAL COMMUNICATION</h1>
-        <p>In this teaching modality, based on Law nº 13.415 / 17, the student will attend High School structured in conjunction with the formation of Technician in Visual Communication, in a journey up to 30 weekly classes (up to 6 daily classes), in each of the 3 series.
-At the end of the course, the student will have completed high school and will also obtain the diploma of Visual Communication Technician, with national validity, according to the following professional profile: THE TECHNICIAN IN VISUAL COMMUNICATION is the professional who designs and
-executes visual communication projects of different genres and graphic formats for advertising pieces, such as books, portals, panels, brochures, newspapers. Develops and employs creative and aesthetic elements of graphic visual communication.
-Creates illustrations, applies typography, develops elements of visual identity of pieces. Controls, organizes and stores physical and digital materials for graphic production.
-        </p>
+      <div class="cursos">
+        <div class="row">
+          <div class="audio-video">
+            <div class="top">
+              <h1><a href="audioVideo.php">Áudio e Vídeo</a></h1>        
+            </div>
+            <div class="links">
+                <h1><a href="https://drive.google.com/open?id=15sz1IZYHYgbPPfRNCRD89kv19TdH3NZE">1º ano</a></h1>
+                <h1><a href="https://drive.google.com/open?id=1RQYHmp_xdvEMYam5i7pQMRTND8QMv0YJ">2º ano</a></h1>
+                <h1><a href="https://drive.google.com/open?id=1fnLQQivUGFz8CW4NL0xa2aRfs6XvtcCK">3º ano</a></h1>
+            </div>
+          </div>
 
+          <div class="multimedia">
+            <div class="top">
+              <h1><a href="multimidia.php">Multimidia</a></h1>
+            </div>
+            <div class="links">
+                <h1><a href="https://drive.google.com/open?id=1D48Dq5GvUmg_IbYhSdAwzlzhoiYpybWp">1º ano</a></h1>
+                <h1><a href="https://drive.google.com/open?id=1uufas0SXOJeON53DU1LKLB9Wf7RBtsJu">2º ano</a></h1>
+            </div>
+          </div>
+        </div>
 
-        <h1>PREREQUISITES</h1>
-        <p>Have the certificate of completion of Elementary Education in the following modalities: regular or Youth and Adult Education - EJA or National Exam for Certification of Youth and Adult Skills - ENCCEJA. <br>
-<br> Course coordinator: Professor Juliana Lamas<br>
-		<br><a href="http://etecjrm.com.br/wp-content/uploads/2019/02/Comunicação-Visual_MTec_1ª-Série.pdf">Course Matrix</a></p>
-        </p>
+        <div class="row">
+          <div class="comunicacao-visual">
+            <div class="top">
+              <h1><a href="comunicacaoVisual.php">Comunicação Visual</a></h1>        
+            </div>
+            <div class="links"> 
+                <h1><a href="https://drive.google.com/open?id=1D48Dq5GvUmg_IbYhSdAwzlzhoiYpybWp">1º ano</a></h1>
+                <h1><a href="https://drive.google.com/open?id=1uufas0SXOJeON53DU1LKLB9Wf7RBtsJu">2º ano</a></h1>
+            </div>
+          </div>
+
+          <div class="tecnico-web">
+            <div class="top">
+              <h1><a href="tecnicoWeb.php">Informática para Web</a></h1>
+            </div>
+            <div class="links">
+                <h1><a href="https://drive.google.com/open?id=1-K6C-kt8wqKMsx6miOzwwtON8P86AB4u">1º ano</a></h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="jogos-digitais">
+            <div class="top">
+              <h1><a href="jogosDigitais.php">Jogos Digitais</a></h1>        
+            </div>
+            <div class="links">
+                <h1><a href="https://drive.google.com/open?id=1RZQXsnZxg0l_nefARfq0h1-c4aG3V88p">1º ano</a></h1>
+                <h1><a href="https://drive.google.com/open?id=17kBjTf2ihhuu1Yvbc-ozHkfd80VS17Wh">2º ano</a></h1>
+            </div>
+          </div>
+
+          <div class="marketing">
+            <div class="top">
+              <h1><a href="marketing.php">Marketing</a></h1>
+            </div>
+            <div class="links">
+                <h1><a href="https://drive.google.com/open?id=12GFLlyfTtQ3Td8SF494UTr2NWxyugs_k">1º ano</a></h1>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -455,11 +472,11 @@ Creates illustrations, applies typography, develops elements of visual identity 
           </path>
           </svg>
           
-          <h1>CONTACT</h1>
+          <h1>CONTATO</h1>
         </header>
 
-        <p><strong>Email:</strong> <a href="mailto:e253dir@cps.sp.gov.br" rel="noopener">send email</a></p>
-        <p><strong>Phone Number:</strong> 5103-2085</p>
+        <p><strong>Email:</strong> <a href="mailto:e253dir@cps.sp.gov.br" rel="noopener">mandar email</a></p>
+        <p><strong>Telefone:</strong> 5103-2085</p>
       </div>
 
       <div class="endereco">
@@ -476,13 +493,13 @@ Creates illustrations, applies typography, develops elements of visual identity 
           </path>
           </svg>
 
-          <h1>ADDRESS</h1>
+        <h1>ENDEREÇO</h1>
         </header>
         <p>ETEC Jornalista Roberto Marinho</p>
-        <p>Chucri Zaidan Avenue, 40</p>
+        <p>Avenida Chucri Zaidan, 40</p>
         <p>Brooklin Novo</p>
         <p>São Paulo / SP</p>
-        <p><strong>Postal Code:</strong> 04583-110</p>
+        <p><strong>CEP:</strong> 04583-110</p>
       </div>
 
       <div class="social">
@@ -498,7 +515,7 @@ Creates illustrations, applies typography, develops elements of visual identity 
           >
           </path>
           </svg>
-          <h1>SOCIAL MEDIA</h1>
+          <h1>REDES SOCIAIS</h1>
         </header>
 
         <div class="icones">
@@ -599,7 +616,7 @@ Creates illustrations, applies typography, develops elements of visual identity 
 
     <div class="direitosAutorais">
       <div id="separador" class="quinto"></div>
-      <h1>&copy;2020 ETEC JORNALISTA ROBERTO MARINHO. ALL RIGHTS RESERVED</h1>
+      <h1>&copy;2020 ETEC JORNALISTA ROBERTO MARINHO. TODOS DIREITOS RESERVADOS</h1>
     </div>
   </footer>
 </body>
