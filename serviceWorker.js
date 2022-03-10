@@ -1,11 +1,11 @@
 const cacheName = 'etec-v1'
 const staticAssets = [
     './',
-    './index.php',
-    './paginas/proposito.php',
-    './paginas/espacoAluno.php',
-    './paginas/cursosTecnicos.php',
-    './paginas/faleConosco.php',
+    './index.html',
+    './paginas/proposito.html',
+    './paginas/espacoAluno.html',
+    './paginas/cursosTecnicos.html',
+    './paginas/faleConosco.html',
     './css/index.css',
     './css/proposito.css',
     './css/espacoAluno.css',
