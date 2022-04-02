@@ -1,6 +1,12 @@
-import Link from "next/link";
 import { memo, useCallback, useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import { CSSTransition } from "react-transition-group";
+
+import Dropdown, {
+  GenericDropdownProps,
+  Transition,
+  useDropdown,
+} from "../index";
 
 import styles from "../../styles.module.css";
 
@@ -11,10 +17,6 @@ type DropdownItemProps = {
   rightIcon?: React.ReactNode;
 
   href?: string;
-};
-
-type DropdownProps = {
-  hidden: boolean;
 };
 
 const courses = [
@@ -40,24 +42,36 @@ const courses = [
   },
 ];
 
-const CoursesDropdown: React.FC<DropdownProps> = ({ hidden }) => {
-  const [activeMenu, setActiveMenu] = useState("main");
-  const [menuHeight, setMenuHeight] = useState<number | null>(null);
-  const dropdownRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const inner = dropdownRef.current?.firstChild as HTMLElement;
-
-    setMenuHeight(inner?.offsetHeight);
-  }, []);
-
-  const calcHeight = useCallback((element: HTMLElement) => {
-    const height = element.offsetHeight;
-    setMenuHeight(height);
-  }, []);
+const CoursesDropdown: React.FC<GenericDropdownProps> = ({
+  hidden,
+  setOpen,
+}) => {
+  const { setActiveMenu, dropdownRef, menuHeight, activeMenu, calcHeight } =
+    useDropdown({
+      setOpen,
+    });
 
   // eslint-disable-next-line react/display-name
   const DropdownItem: React.FC<DropdownItemProps> = memo(
+    ({ children, leftIcon, rightIcon, goToMenu, href }) => {
+      return (
+        <a
+          href="#"
+          className={styles.menuItem}
+          onClick={() => goToMenu && setActiveMenu(goToMenu)}
+        >
+          {leftIcon && <span className={styles.iconButton}>{leftIcon}</span>}
+
+          {children}
+
+          {rightIcon && <span className={styles.iconRight}>{rightIcon}</span>}
+        </a>
+      );
+    }
+  );
+
+  // eslint-disable-next-line react/display-name
+  const DropdownItemLink: React.FC<DropdownItemProps & { href: string }> = memo(
     ({ children, leftIcon, rightIcon, goToMenu, href }) => {
       return (
         <Link href={href || "#"}>
@@ -66,9 +80,7 @@ const CoursesDropdown: React.FC<DropdownProps> = ({ hidden }) => {
             onClick={() => goToMenu && setActiveMenu(goToMenu)}
           >
             {leftIcon && <span className={styles.iconButton}>{leftIcon}</span>}
-
             {children}
-
             {rightIcon && <span className={styles.iconRight}>{rightIcon}</span>}
           </a>
         </Link>
@@ -76,37 +88,31 @@ const CoursesDropdown: React.FC<DropdownProps> = ({ hidden }) => {
     }
   );
 
-  const transitionTimeout = 500;
-  const maxDropdownHeight = 300;
-
   return (
-    <div
-      className={styles.dropdown}
-      ref={dropdownRef}
-      data-hidden={`${!hidden}`}
-      style={
-        menuHeight
-          ? {
-              height: `${menuHeight + 20}px`,
-              overflowY: menuHeight > maxDropdownHeight ? "auto" : "hidden",
-            }
-          : {}
-      }
-    >
-      <CSSTransition
-        in={activeMenu === "main"}
-        unmountOnExit
-        timeout={transitionTimeout}
-        classNames="menu-primary"
-        onEnter={calcHeight}
+    <Dropdown dropdownRef={dropdownRef} hidden={hidden} menuHeight={menuHeight}>
+      <Transition
+        menu="main"
+        variant="primary"
+        activeMenu={activeMenu}
+        calcHeight={calcHeight}
       >
-        <div className={styles.menu}>
-          {courses.map(({ name, href }) => (
-            <DropdownItem key={href}>{name.toUpperCase()}</DropdownItem>
-          ))}
-        </div>
-      </CSSTransition>
-    </div>
+        {courses.map(({ name, href }) => (
+          <DropdownItemLink href={href} key={href}>
+            {name.toUpperCase()}
+          </DropdownItemLink>
+        ))}
+        <DropdownItem goToMenu="slim">go to slim</DropdownItem>
+      </Transition>
+
+      <Transition
+        menu="slim"
+        variant="secondary"
+        activeMenu={activeMenu}
+        calcHeight={calcHeight}
+      >
+        <DropdownItem goToMenu="main">back</DropdownItem>
+      </Transition>
+    </Dropdown>
   );
 };
 

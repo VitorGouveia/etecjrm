@@ -1,7 +1,19 @@
-import { memo, useCallback, useEffect, useRef, useState } from "react";
+import {
+  memo,
+  RefObject,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import { CSSTransition } from "react-transition-group";
 
+import { useOnClickOutside } from "@hooks/useOnClickOutside";
+
 import styles from "../styles.module.css";
+
+export const transitionTimeout = 500;
+export const maxDropdownHeight = 300;
 
 type DropdownItemProps = {
   children: React.ReactNode;
@@ -10,14 +22,28 @@ type DropdownItemProps = {
   rightIcon?: React.ReactNode;
 };
 
-type DropdownProps = {
-  hidden: boolean;
+type useDropdownProps = {
+  setOpen: (open: boolean) => void;
 };
 
-const Dropdown: React.FC<DropdownProps> = ({ hidden }) => {
+export const useDropdown = ({ setOpen }: useDropdownProps) => {
   const [activeMenu, setActiveMenu] = useState("main");
   const [menuHeight, setMenuHeight] = useState<number | null>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
+
+  useOnClickOutside(dropdownRef, (event) => {
+    // clicked element
+    const clickedElement = event.target as HTMLElement;
+    // search for this dropdown near the clicked element
+    const dropdownTarget = clickedElement.nextSibling;
+    if (dropdownTarget === dropdownRef.current) {
+      console.log("the clicked element is the link used to open the dropdown");
+      return;
+    }
+
+    setOpen(false);
+    console.log("probably a link or something else");
+  });
 
   useEffect(() => {
     const inner = dropdownRef.current?.firstChild as HTMLElement;
@@ -29,28 +55,61 @@ const Dropdown: React.FC<DropdownProps> = ({ hidden }) => {
     setMenuHeight(height);
   }, []);
 
-  // eslint-disable-next-line react/display-name
-  const DropdownItem: React.FC<DropdownItemProps> = memo(
-    ({ children, leftIcon, rightIcon, goToMenu }) => {
-      return (
-        <a
-          href="#"
-          className={styles.menuItem}
-          onClick={() => goToMenu && setActiveMenu(goToMenu)}
-        >
-          {leftIcon && <span className={styles.iconButton}>{leftIcon}</span>}
+  return {
+    activeMenu,
+    setActiveMenu,
+    menuHeight,
+    calcHeight,
+    dropdownRef,
+  };
+};
 
-          {children}
+type TransitionProps = {
+  menu: string;
+  activeMenu: string;
+  calcHeight: (element: HTMLElement) => void;
 
-          {rightIcon && <span className={styles.iconRight}>{rightIcon}</span>}
-        </a>
-      );
-    }
+  variant: "primary" | "secondary";
+};
+
+export const Transition: React.FC<TransitionProps> = ({
+  children,
+  menu,
+  activeMenu,
+  calcHeight,
+  variant,
+}) => {
+  return (
+    <CSSTransition
+      in={activeMenu === menu}
+      unmountOnExit
+      timeout={transitionTimeout}
+      classNames={`menu-${variant}`}
+      onEnter={calcHeight}
+    >
+      <div className={styles.menu}>{children}</div>
+    </CSSTransition>
   );
+};
 
-  const transitionTimeout = 500;
-  const maxDropdownHeight = 300;
+export type DropdownProps = {
+  hidden: boolean;
+  menuHeight: number | null;
+  dropdownRef: RefObject<HTMLDivElement>;
+  children: React.ReactNode;
+};
 
+export type GenericDropdownProps = {
+  hidden: boolean;
+  setOpen(open: boolean): void;
+};
+
+const Dropdown: React.FC<DropdownProps> = ({
+  hidden,
+  children,
+  dropdownRef,
+  menuHeight,
+}) => {
   return (
     <div
       className={styles.dropdown}
@@ -65,97 +124,7 @@ const Dropdown: React.FC<DropdownProps> = ({ hidden }) => {
           : {}
       }
     >
-      <CSSTransition
-        in={activeMenu === "main"}
-        unmountOnExit
-        timeout={transitionTimeout}
-        classNames="menu-primary"
-        onEnter={calcHeight}
-      >
-        <div className={styles.menu}>
-          <DropdownItem goToMenu="profile">My profile</DropdownItem>
-          <DropdownItem goToMenu="settings">Settings</DropdownItem>
-          <DropdownItem goToMenu="theme">Change theme</DropdownItem>
-        </div>
-      </CSSTransition>
-
-      <CSSTransition
-        in={activeMenu === "profile"}
-        unmountOnExit
-        timeout={transitionTimeout}
-        classNames="menu-secondary"
-        onEnter={calcHeight}
-      >
-        <div className={styles.menu}>
-          <DropdownItem goToMenu="main">
-            <h4>go back</h4>
-          </DropdownItem>
-          <DropdownItem>
-            <button>quit life</button>
-          </DropdownItem>
-        </div>
-      </CSSTransition>
-
-      <CSSTransition
-        in={activeMenu === "settings"}
-        unmountOnExit
-        timeout={transitionTimeout}
-        classNames="menu-secondary"
-        onEnter={calcHeight}
-      >
-        <div className={styles.menu}>
-          <DropdownItem goToMenu="main">
-            <h4>go back</h4>
-          </DropdownItem>
-        </div>
-      </CSSTransition>
-
-      <CSSTransition
-        in={activeMenu === "theme"}
-        unmountOnExit
-        timeout={transitionTimeout}
-        classNames="menu-secondary"
-        onEnter={calcHeight}
-      >
-        <div className={styles.menu}>
-          <DropdownItem goToMenu="main">
-            <h4>go back</h4>
-          </DropdownItem>
-          <DropdownItem goToMenu="main">
-            <h4>go back</h4>
-          </DropdownItem>
-          <DropdownItem goToMenu="main">
-            <h4>go back</h4>
-          </DropdownItem>
-          <DropdownItem goToMenu="main">
-            <h4>go back</h4>
-          </DropdownItem>
-          <DropdownItem goToMenu="main">
-            <h4>go back</h4>
-          </DropdownItem>
-          <DropdownItem goToMenu="main">
-            <h4>go back</h4>
-          </DropdownItem>
-          <DropdownItem goToMenu="main">
-            <h4>go back</h4>
-          </DropdownItem>
-          <DropdownItem goToMenu="main">
-            <h4>go back</h4>
-          </DropdownItem>
-          <DropdownItem goToMenu="main">
-            <h4>go back</h4>
-          </DropdownItem>
-          <DropdownItem goToMenu="main">
-            <h4>go back</h4>
-          </DropdownItem>
-          <DropdownItem goToMenu="main">
-            <h4>go back</h4>
-          </DropdownItem>
-          <DropdownItem goToMenu="main">
-            <h4>go back</h4>
-          </DropdownItem>
-        </div>
-      </CSSTransition>
+      {children}
     </div>
   );
 };

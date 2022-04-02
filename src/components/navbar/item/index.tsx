@@ -1,4 +1,4 @@
-import { memo, useState } from "react";
+import { memo, useRef, useState } from "react";
 import Link from "next/link";
 
 import styles from "../styles.module.css";
@@ -6,7 +6,12 @@ import styles from "../styles.module.css";
 type NavItemProps = {
   icon: React.ReactNode;
   href?: string;
-  content: ({ hidden }: { hidden: boolean }) => JSX.Element;
+  content: ({
+    hidden,
+  }: {
+    hidden: boolean;
+    setOpen: (open: boolean) => void;
+  }) => JSX.Element;
 };
 
 const NavItem: React.FC<NavItemProps> = ({ icon, href, content: Content }) => {
@@ -24,9 +29,27 @@ const NavItem: React.FC<NavItemProps> = ({ icon, href, content: Content }) => {
       </a>
       {/* </Link> */}
 
-      <Content hidden={open} />
+      <Content hidden={open} setOpen={setOpen} />
     </li>
   );
 };
+
+type NavItemLinkProps = {
+  icon: React.ReactNode;
+  href: string;
+};
+
+// eslint-disable-next-line react/display-name
+export const NavItemLink: React.FC<NavItemLinkProps> = memo(
+  ({ icon, href }) => {
+    return (
+      <li className={styles.navItem}>
+        <Link href={href || "#"}>
+          <a className={styles.iconButton}>{icon}</a>
+        </Link>
+      </li>
+    );
+  }
+);
 
 export default memo(NavItem);
