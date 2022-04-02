@@ -1,0 +1,31 @@
+.container {
+  width: 100%;
+  height: 100%;
+
+  background: blue;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: var(--mobile-grid-columns);
+  gap: var(--mobile-grid-gap);
+}
+
+.content {
+  max-width: 1420px;
+}
+
+@media (min-width: 320px) {
+  .container {
+    grid-template-columns: var(--tablet-grid-columns);
+    gap: var(--tablet-grid-gap);
+  }
+}
+
+@media (min-width: 780px) {
+  .container {
+    grid-template-columns: var(--desktop-grid-columns);
+    gap: var(--desktop-grid-gap);
+  }
+}
